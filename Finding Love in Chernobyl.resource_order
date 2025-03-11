@@ -33,6 +33,7 @@
     {"name":"Right6","order":10,"path":"paths/Right6/Right6.yy",},
     {"name":"rm_title","order":1,"path":"rooms/rm_title/rm_title.yy",},
     {"name":"spr_dryad_pixel","order":3,"path":"sprites/spr_dryad_pixel/spr_dryad_pixel.yy",},
+    {"name":"spr_grass","order":5,"path":"sprites/spr_grass/spr_grass.yy",},
     {"name":"spr_player_exit","order":1,"path":"sprites/spr_player_exit/spr_player_exit.yy",},
     {"name":"spr_preacher_pixel","order":4,"path":"sprites/spr_preacher_pixel/spr_preacher_pixel.yy",},
     {"name":"spr_title","order":2,"path":"sprites/spr_title/spr_title.yy",},
