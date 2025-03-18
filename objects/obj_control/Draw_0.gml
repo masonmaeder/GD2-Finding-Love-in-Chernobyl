@@ -12,7 +12,7 @@ if IsChatterbox(chatterbox) and text != undefined
 var char_x = 275;  // Small offset from the left edge
 var char_y = room_height - (size[0]);  // Near the bottom
 
-draw_sprite_ext(characters, 0, char_x, char_y, size[0], size[0], 0, colour[0], 1);
+draw_sprite_ext(spr_preacher_anime, 0, char_x, char_y, size[0], size[0], 0, colour[0], 1);
 
 
 
