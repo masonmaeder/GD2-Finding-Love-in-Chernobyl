@@ -1,4 +1,4 @@
-if (place_meeting(x,y,obj_barrel) && keyboard_check_pressed(vk_space)){
+/* if (place_meeting(x,y,obj_barrel) && keyboard_check_pressed(vk_space)){
 	jumpedIn = !jumpedIn;
 }
 
@@ -7,7 +7,7 @@ if (jumpedIn) {
 	    xSpeed = 0;
 	    ySpeed = 0;
 	    exit; // Stop movement processing
-} else {
+} else { */
 	// If jumped out, allow movement and make visible
 	visible = true;
 
@@ -43,4 +43,4 @@ if (jumpedIn) {
 	x = clamp(x, 0, room_width-sprite_width);
 	y = clamp(y, 0, room_height - sprite_height);
 
-}
+// }
