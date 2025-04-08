@@ -44,3 +44,11 @@ if (jumpedIn) {
 	y = clamp(y, 0, room_height - sprite_height);
 
 // }
+
+
+// Toggle vignette
+if (x > 670) {
+	layer_set_visible("fx_vignette", true);
+} else {
+	layer_set_visible("fx_vignette", false);
+}
