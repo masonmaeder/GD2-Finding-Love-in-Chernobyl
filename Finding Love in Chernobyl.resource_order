@@ -146,5 +146,6 @@
     {"name":"spr_title","order":2,"path":"sprites/spr_title/spr_title.yy",},
     {"name":"spr_tree_2","order":10,"path":"sprites/spr_tree_2/spr_tree_2.yy",},
     {"name":"spr_tree","order":21,"path":"sprites/spr_tree/spr_tree.yy",},
+    {"name":"spr_vignette","order":28,"path":"sprites/spr_vignette/spr_vignette.yy",},
   ],
 }
