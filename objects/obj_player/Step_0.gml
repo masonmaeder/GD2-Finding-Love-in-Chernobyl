@@ -25,15 +25,29 @@ if (jumpedIn) {
 	
 	show_debug_message(xSpeed);
 
+	// all of the collidable obj
+    var collidable_obj = [obj_invis, obj_bin, obj_boulder, obj_dryad_pixel, obj_enemy, obj_fire, obj_fog, obj_guide_pixel, obj_hobo_pixel, obj_lake, obj_ooze_pixel, obj_preacher_pixel, obj_tent, obj_tree, obj_tree_2, obj_wall];
 
-	//wall collisions
-	if place_meeting(x+xSpeed, y, obj_wall){
-		xSpeed = 0;
+    //wall collisions
+    for (var i = 0; i < array_length(collidable_obj); i++) {
+        if place_meeting(x+xSpeed, y, collidable_obj[i]){
+            xSpeed = 0;
+        }
+        if place_meeting(x, y+ySpeed, collidable_obj[i]){
+            ySpeed = 0;
+        }
+		
+		if (collidable_obj[i] == obj_preacher_pixel) {
+			if (keyboard_check_pressed(vk_space)) {
+				room_goto(rm_stage);
+			}	
+		}
+		if (collidable_obj[i] == obj_dryad_pixel) {
+			if (keyboard_check_pressed(vk_space)) {
+				room_goto(rm_woods);
+			}	
+		}
 	}
-	if place_meeting(x, y+ySpeed, obj_wall){
-		ySpeed = 0;
-	}
-
 
 	//move player
 	x += xSpeed;

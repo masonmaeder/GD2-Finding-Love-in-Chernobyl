@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"spr_boulder",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":61,
   "bbox_left":2,
   "bbox_right":55,
-  "bbox_top":26,
+  "bbox_top":46,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
