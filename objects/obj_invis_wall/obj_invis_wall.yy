@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_ooze_pixel",
+  "name": "obj_invis_wall",
   "spriteId": {
-    "name": "ooze_pixel",
-    "path": "sprites/ooze_pixel/ooze_pixel.yy",
+    "name": "spr_invis_wall",
+    "path": "sprites/spr_invis_wall/spr_invis_wall.yy",
   },
   "solid": false,
   "visible": true,
