@@ -39,6 +39,10 @@
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"chatterbox_license.txt","CopyToMask":-1,"filePath":"datafiles","name":"chatterbox_license.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"dialogue_doctor.txt","CopyToMask":-1,"filePath":"datafiles","name":"dialogue_doctor.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"dialogue_dryad.txt","CopyToMask":-1,"filePath":"datafiles","name":"dialogue_dryad.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"dialogue_ooze.txt","CopyToMask":-1,"filePath":"datafiles","name":"dialogue_ooze.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"dialogue_priest.txt","CopyToMask":-1,"filePath":"datafiles","name":"dialogue_priest.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"example_speakerdata_sprite.chatter","CopyToMask":-1,"filePath":"datafiles","name":"example_speakerdata_sprite.chatter","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"example.chatter","CopyToMask":-1,"filePath":"datafiles","name":"example.chatter","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"localization table.csv","CopyToMask":-1,"filePath":"datafiles","name":"localization table.csv","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -91,6 +95,7 @@
   },
   "name":"Finding Love in Chernobyl",
   "resources":[
+    {"id":{"name":"fnt_dialogue","path":"fonts/fnt_dialogue/fnt_dialogue.yy",},},
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"obj_bin","path":"objects/obj_bin/obj_bin.yy",},},
     {"id":{"name":"obj_boulder","path":"objects/obj_boulder/obj_boulder.yy",},},
@@ -201,6 +206,7 @@
     {"id":{"name":"ChatterboxWait","path":"scripts/ChatterboxWait/ChatterboxWait.yy",},},
     {"id":{"name":"functions","path":"scripts/functions/functions.yy",},},
     {"id":{"name":"IsChatterbox","path":"scripts/IsChatterbox/IsChatterbox.yy",},},
+    {"id":{"name":"scr_load_node","path":"scripts/scr_load_node/scr_load_node.yy",},},
     {"id":{"name":"hobo_pixel","path":"sprites/hobo_pixel/hobo_pixel.yy",},},
     {"id":{"name":"ooze_pixel","path":"sprites/ooze_pixel/ooze_pixel.yy",},},
     {"id":{"name":"spr_bin","path":"sprites/spr_bin/spr_bin.yy",},},

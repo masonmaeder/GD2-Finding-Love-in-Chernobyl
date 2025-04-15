@@ -1,42 +1,42 @@
-var _count = ChatterboxGetOptionCount(chatterbox); // Get the number of options we have
+var node = dialogue_nodes[? current_node];
+var space_pressed = keyboard_check_pressed(vk_space);
 
-
-if ChatterboxIsWaiting(chatterbox) and keyboard_check_pressed(vk_space) // Is Chatterbox waiting for user input
-{
-    ChatterboxContinue(chatterbox);
-    chatterbox_update();
-}
-else if _count // Is Chatterbox presenting the user with options
-{
-    var _key = keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
-    
-    // Move option_index twice if next option is invalid
-    repeat (1 + (ChatterboxGetOptionConditionBool(chatterbox, wrap(option_index + _key, 0, _count - 1)) == false))
-    {
-        option_index = wrap(option_index + _key, 0, _count - 1);
-    }
-
-    if keyboard_check_pressed(vk_space)
-    {
-		if (option_index == 0) {
-			background_set_index([0]);
-			text = "Glad to hear!";
-			alarm[0] = game_get_speed(gamespeed_fps) * 3;
-		} 
-		else if (option_index == 1) {
-			background_set_index([0]); // Set background to tile 1
-			text = "Oh noooo, did I do something to upset you?";
-			alarm[0] = game_get_speed(gamespeed_fps) * 3;
-		} 
-		else if (option_index == 2) {
-			background_set_index([0]); // Set background to tile 2
-			text = "Lets get married!!";
-			alarm[0] = game_get_speed(gamespeed_fps) * 3;
-		}
+//Typewriter Logic
+if (is_typing) {
+    if (space_pressed) {
+        // Instantly finish the text
+        typewriter_index = string_length(typewriter_text);
+        is_typing = false;
+    } else if (typewriter_index < string_length(typewriter_text)) {
+        typewriter_index += 1;
     }
 }
-
-if ChatterboxIsStopped(chatterbox) // End when reached end of chatterbox
+else
 {
-    instance_destroy();
+    //If more pages remain, advance
+    if (current_page < array_length(pages) - 1 && space_pressed) {
+        current_page += 1;
+        typewriter_text = pages[current_page];
+        typewriter_index = 0;
+        is_typing = true;
+    }
+
+    //Final Page
+    else if (current_page == array_length(pages) - 1 && array_length(node.choices) > 0) {
+        var count = array_length(node.choices);
+
+        //Move up/down through choices
+        if (keyboard_check_pressed(vk_down)) {
+            selected_choice = (selected_choice + 1) mod count;
+        }
+        if (keyboard_check_pressed(vk_up)) {
+            selected_choice = (selected_choice - 1 + count) mod count;
+        }
+
+        //Choose selected option
+        if (space_pressed) {
+            var next_node = node.choices[selected_choice][1];
+            scr_load_node(next_node);
+        }
+    }
 }
