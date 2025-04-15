@@ -26,7 +26,7 @@ if (jumpedIn) {
 	show_debug_message(xSpeed);
 
 	// all of the collidable obj
-    var collidable_obj = [obj_invis, obj_bin, obj_boulder, obj_dryad_pixel, obj_enemy, obj_fire, obj_fog, obj_guide_pixel, obj_hobo_pixel, obj_lake, obj_ooze_pixel, obj_preacher_pixel, obj_tent, obj_tree, obj_tree_2, obj_wall];
+    var collidable_obj = [obj_invis, obj_bin, obj_boulder, obj_dryad_pixel, obj_enemy, obj_fire, obj_guide_pixel, obj_hobo_pixel, obj_lake, obj_ooze_pixel, obj_preacher_pixel, obj_tent, obj_tree, obj_tree_2];
 
     //wall collisions
     for (var i = 0; i < array_length(collidable_obj); i++) {

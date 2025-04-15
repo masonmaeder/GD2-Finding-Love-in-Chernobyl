@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"hobo_pixel",
-    "path":"sprites/hobo_pixel/hobo_pixel.yy",
+    "name":"spr_hobo_pixel",
+    "path":"sprites/spr_hobo_pixel/spr_hobo_pixel.yy",
   },
   "spriteMaskId":null,
   "visible":true,
