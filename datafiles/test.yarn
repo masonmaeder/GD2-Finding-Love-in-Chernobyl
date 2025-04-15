@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: 134,189
@@ -36,4 +37,37 @@ __PrivCrochet_tags:
 title: Option C
 ---
 Empty Text
+=======
+title: Start
+---
+<<bg(0)>>
+Narrator: You wake up in a quiet camp, the wind howling outside.
+    -> Look around
+        <<jump Look>>
+    -> Call out for help
+        <<jump Call>>
+    -> Stay silent and listen
+        <<jump Listen>>
+===
+
+title: Look
+---
+<<bg(1)>>
+Narrator: You see snow-covered tents and a bonfire in the distance.
+<<jump Start>>
+===
+
+title: Call
+---
+<<bg(2)>>
+Narrator: Your voice echoes, but no one responds immediately.
+<<jump Start>>
+===
+
+title: Listen
+---
+<<bg(3)>>
+Narrator: You hear faint footsteps approaching through the snow.
+<<jump Start>>
+>>>>>>> Stashed changes
 ===

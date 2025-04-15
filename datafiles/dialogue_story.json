@@ -1,0 +1,24 @@
+{
+  "start": {
+    "text": "Traveler from afar, you seem lost.",
+    "choices": [
+      { "text": "Step forward and admit memory loss", "next": "honest" },
+      { "text": "Ask where you are", "next": "curious" }
+    ]
+  },
+  "honest": {
+    "text": "I’ve lost my memory—I don’t know who I am.",
+    "next": "comfort"
+  },
+  "curious": {
+    "text": "Where is this place? Why did I come here?",
+    "next": "history"
+  },
+  "comfort": {
+    "text": "Losing your memory is painful, but here you can rediscover yourself.",
+    "choices": [
+      { "text": "Accept help", "next": "camp_life" },
+      { "text": "Decline and walk away", "next": "solo_path" }
+    ]
+  }
+}

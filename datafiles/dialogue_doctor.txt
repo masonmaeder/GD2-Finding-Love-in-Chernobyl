@@ -1,0 +1,161 @@
+#ID: doctor_start
+TEXT: Chapter 1: The Mysterious Clinic
+When you wake up, you find yourself lying on a crude wooden plank bed, covered by a worn-out blanket. The small, dim room is a shabby hut with old medical instruments hanging on the walls and various medicines and devices piled in the corners. Hanging from the iron frame at the head of the bed is half a bottle of glucose drip; a rubber tube dangles beside an empty aluminum lunchbox, and you can faintly see scabbing marks at the needle puncture sites. You feel an excruciating headache, and a cool sensatio...
+You struggle to sit up and see a figure busy at the doorway. She is wearing a worn white coat and is intently arranging some test tubes and samples. Hearing the commotion, she looks up; her sharp gaze sweeps over you. You notice that her left pinky wears a broken protective ring.
+"You're awake," she says in a calm, professional tone. "I am the doctor, and this is my clinic. You collapsed in the radiation zone—I brought you back."
+You try to recall how you came here, but your mind is blank. Sensing your confusion, she hands you a glass of water. "I was collecting samples, and that trap was set by me to catch a monster. Fortunately, you were lucky enough to fall onto a previously captured monster’s body," she explains. At this moment, you are faced with the following choices:
+CHOICE: Step forward slowly and take the cup|doctor_recall
+CHOICE: Remain still, your memory impaired|doctor_recall
+CHOICE: Look around for your belongings|doctor_clues
+CHOICE: Look around in confusion and ask her where this place is|doctor_clues
+
+#ID: doctor_recall
+TEXT: She silently gazes at you, noticing your furrowed brow and closed eyes as if you were desperately searching deep into your memory, and she lets out a slight sigh. She knows that in this dangerous, radiation-ravaged area, it is not uncommon for someone like you to suffer memory loss from radiation exposure. "Most likely, you accidentally wandered into the radiation zone from outside. This area is fraught with danger—radiation silently corrodes everything, and your scrambled memories are likely due t...
+Recalling the moment she discovered you, she continues, "I was collecting research samples and had set a trap to capture a monster. I never expected you to accidentally fall into it. You were lucky—landing on the corpse of a previously captured monster saved you from serious injury."
+You clutch your head with both hands, your face contorted in pain, and you exclaim, "I don't remember anything from before!" Your head feels like it's about to explode; every attempt to recall even a fragment of your past brings forth a surge of searing pain, overwhelming you.
+She says no more. Instead, she turns to a nearby table, picks up a yellowed piece of paper on which simple charcoal lines and markings have been drawn, and returns to hand it to you. Calmly, she says, "This is a map of the camp and its surroundings. You can choose to go out and explore, or stay here to rest. However, you must always be vigilant—even though the camp is relatively safe, danger lurks everywhere." At that moment, you decide to leave this place and go explore.
+You depart from the clinic and never cross paths with the doctor again.
+CHOICE: Restart|start
+
+#ID: doctor_clues
+TEXT: Seeing your hesitation, she quickly walks to your side, extends a hand to steady you, and gently reassures, "Don't worry, take it slow. I've placed your belongings on that table over there; you can take a look—you might find some useful clues." She gestures toward a cluttered table in the corner where several items you carried are arranged.
+Still feeling weak, you slowly drag yourself toward the table. Scanning the items, your eyes eventually settle on a worn notebook. You reach out and pick it up; its pages are a bit stuck together from moisture. As you carefully flip through it, you discover a yellowed photograph tucked between the pages. The edges of the photo are ragged, as if it had been hastily torn out. Upon closer inspection, you notice a striking triangular symbol drawn on the back—the apex of the triangle is slightly indented. Wha...
+You decide to rest in the clinic for a day to recover before heading out again. She resumes her research work but continues to keep an eye on your condition.
+CHOICE: Decide to Stay and Fall Asleep|research
+
+#ID: research_start
+TEXT: Chapter 2: The Mysterious Research
+Early the next morning, sunlight struggled through the dust-covered little window, spilling onto the clinic’s floor. You feel that your body has improved a little. Inside the clinic, you see her busily at work—she is observing some samples under a microscope, her expression focused and serious.
+You walk over and quietly ask, “What are you researching?”
+She looks up and smiles slightly, replying, “I am studying the effects of radiation on the human body. The survivors here have all been exposed to varying degrees of radiation, and I hope to find some methods to alleviate their suffering.”
+Hearing this, you gain a deeper understanding of the dangers of the radiation zone, and you also worry more about her safety. At that moment, you notice that the protective gear she has set aside is rather worn out, with signs of abrasion in many areas. You hesitate for a moment, facing a new choice:
+CHOICE: Offer to repair her protective gear|concern_action
+CHOICE: Suggest that she replace it with new protective gear|concern_reminder
+
+#ID: concern_action
+TEXT: You gaze at the worn protective gear, your brow creasing with worry. After a brief hesitation, you muster your courage and say, “I see your protective gear is quite worn. I know a bit about repairs—how about I help fix it? That way, you’ll have extra protection.”
+She is momentarily taken aback, her eyes flashing a hint of surprise. Pausing her work, she turns to look at you.
+Not expecting such a suggestion, she hesitates briefly before a faint smile graces her lips, and she softly says, “Thank you, but this gear is rather badly damaged. Repairing it might be too troublesome and would take up too much of your time.”
+Quickly, you wave off her concerns and reply, “Not at all—it won’t trouble me. I don’t have much else to do, and I’m happy to help. Besides, in the radiation zone, every bit of protection adds to your safety; I want you to come back safely every time.”
+You then move over to the gear, picking it up and carefully inspecting the worn areas, your eyes filled with earnest determination. Watching your focused efforts, she feels a warm surge of gratitude and nods silently.
+While you work on the repairs, she occasionally comes over to discuss the finer details and even shares some harrowing experiences of dangers encountered in the radiation zone when her gear failed. Unbeknownst to both of you, the distance between you begins to close, and the atmosphere in the clinic grows noticeably warmer and more congenial.
+Later, while discussing the collection of samples, you look up curiously at the test tubes and samples and ask, “Where are these samples collected from?”
+She slightly lifts her gaze and, with a calm tone, answers, “The radiation zone.” After a brief pause, she adds, “I often venture in there to collect samples. Although it’s dangerous, it’s my duty.”
+Surprised and deeply admiring her courage in such a perilous environment, you now face a new choice:
+CHOICE: Volunteer to help collect samples|learn_background
+CHOICE: Ask about her past and what brought her here|learn_background
+CHOICE: Decide to stay and help organize things in the clinic|clinic_assist
+CHOICE: Sort through the samples and engage in conversation|clinic_assist
+
+#ID: concern_reminder
+TEXT: Listening to her explanation, you look at the worn protective gear with concern and say earnestly, “That gear looks extremely worn out. The radiation zone is so dangerous—I’m really worried for you if you continue using it. Why don’t you try to replace it with new protective gear? Safety must come first.”
+She is taken aback for a moment; her eyes fall on the gear as she lets out a soft sigh and says, “I wish I could replace it, but here in the camp, new protective gear is almost impossible to come by. Everyone is in short supply—it’s very hard to get any.” Her eyes reveal a touch of helplessness as she shakes her head gently.
+Frowning as you ponder, you suggest, “Then perhaps we can ask around the camp—someone might know where to find new gear or have extra that they can spare. If not, we might even look for discarded equipment that’s still usable; with some repairs, it might work.” Your eyes remain steady as you hope to persuade her to take the issue more seriously.
+She looks at you, her eyes glistening with a hint of gratitude, and a gentle smile appears on her lips. “Thank you for caring so much about me, but this isn’t something that can be fixed in a rush—it will take time to figure out,” she replies softly. Her tone has softened compared to before, and a measure of trust deepens between you two.
+Continuing your conversation about the samples, she methodically handles the test tubes while you, filled with curiosity, ask, “Where exactly are these samples collected from?”
+She raises her eyes slightly, meeting your gaze calmly, and briefly replies, “The radiation zone.” After a pause, she adds, “I have to go in there frequently to collect samples. Despite the immense danger, it’s a job that must be done.”
+Her answer leaves you wide-eyed—not only astonished by the danger of her work environment but also deeply impressed by her steadfast courage. At this moment, with your mind abuzz, you now face the following choice:
+CHOICE: Volunteer to help collect samples|learn_background
+CHOICE: Ask her about her past and what brought her here|learn_background
+CHOICE: Decide to stay and help organize the clinic|clinic_assist
+CHOICE: Sort through the samples and chat with her|clinic_assist
+
+#ID: learn_background
+TEXT: She seems momentarily surprised, as if not expecting you to ask about her past. A fleeting hesitation crosses her eyes before it melts into a look of warmth. “Alright,” she says, “you can help me organize these samples, and I’ll tell you about my past.” As she methodically hands you the samples, she begins to recount her former life in Moscow—the bustling city, her passion for medicine, and her tireless pursuit of her career.
+Soon, the conversation shifts. She tells you about being sent here to participate in a secret research project—a tale mingled with excitement for the unknown and a complicated set of emotions toward this dangerous, radiation-scarred zone. Through her words, you envision a young doctor full of ideals and valor, who decisively devoted herself to the arduous task of saving lives. With every word, your understanding of her deepens. Moved by her story, you feel a strong impulse to help her further and without a second thought you say, “Let me help you collect more samples.” Gazing at her tired but determined face, you feel compelled to contribute to this noble cause.
+After studying both the map and the existing data she has provided, you deduce that the abandoned school might hold some unique samples—after all, it was once densely populated and remains largely unexplored following the radiation outbreak. You share your idea with her. She furrows her brows slightly and, after a moment of thought, remarks, “The abandoned school indeed might harbor unique samples, but the radiation levels there are uncertain, and dangerous creatures might be lurking. What do you propose?”
+CHOICE: Search the clinic for usable supplies|abandoned_school
+CHOICE: Gather more information and delay departure|delay_departure
+
+#ID: delay_departure
+TEXT: She adjusts the bandages wrapped around her waist and abdomen, stating, “I have long been prepared to meet my end; I advise you to steel yourself accordingly.” With a hint of sympathy in your eyes, you respond, “Then let’s set out tomorrow.”
+CHOICE: An inexplicable urge to protect her|abandoned_school
+
+#ID: clinic_assist
+TEXT: She looks at you, surprise flickering across her eyes before a look of approval forms on her face. “You really want to go into the radiation zone? It’s very dangerous,” she remarks, her gaze appraising your determination. Your eyes light up as you nod eagerly, your voice trembling with excitement: “Of course! We can’t waste any more time. What’s a little danger compared to the urgency of our mission? Let’s head out immediately—maybe we’ll find the key to change everything soon!”
+But upon hearing your fervor, her formerly cheerful expression hardens into a strict line. The admiration in her eyes is swiftly replaced by worry and disapproval, and her tone turns cold: “You’re too impulsive. The radiation zone isn’t a game—without proper preparation, going there is just signing your own death warrant.”
+Yet you pay her no heed, pacing back and forth in the clinic while muttering, “We need to prepare, but for how long? Heading out now is what matters most!” Disregarding all her warnings, you dash to the door, grab a worn backpack from the corner, and start hastily stuffing it with anything that might be useful. In your frantic and clumsy rush, the scattered medicines and equipment in the clinic end up in disarray.
+Watching your out-of-control behavior, she furrows her brow deeply, her eyes filled with disappointment and helplessness as she exclaims, “This isn’t going to work—please, calm down!” But you ignore her, turning to stare at her, and shout, “Don’t stop me! We’re leaving for the radiation zone right now—maybe we’ll find something vital for our research. If we wait any longer, we’ll miss our chance!”
+In that moment, driven by a wild spirit of adventure, you only have eyes for plunging into that dangerous area. You fail to realize that your reckless impulsiveness has caused this once-trusting doctor to erect a wall of caution around you, and the fragile closeness between you both shatters in an instant.
+CHOICE: Restart|start
+
+#ID: school_start
+TEXT: Chapter 3: The Abandoned School
+The biting, icy wind cut into your face like a knife. Clad in tattered, heavy protective suits and carrying tools and medicine, you and she step into the radiation zone against the wind and snow. The fierce gusts whip up snowflakes as if to devour everything, making every step agonizingly difficult. Upon entering, the landscape is unrecognizable. The once-bustling residential area is now nothing but crumbling ruins swaying in the wind and snow. Abandoned houses display shattered doors and windows, clatt...
+You arrive at an abandoned school. From the outside, the building’s structure appears barely intact, but on closer inspection, it is permeated with an air of desolation. The main gate hangs ajar, its rusty hinges creaking in the wind. Scattered at the school’s entrance are remnants of children’s toys—a faded leather ball frozen in the snow, silently recounting bygone moments of joy. Inside, the playground is pockmarked; under the snow lie cracked concrete and overgrown weeds. The basketball hoop has tip...
+CHOICE: Lightly pat her shoulder, offering comfort|silent_companion
+CHOICE: Softly recount the imagined past of the school|verbal_consolation
+
+#ID: silent_companion
+TEXT: She gazes at the wasteland before her, her eyes full of sorrow. Recognizing her grief, you gently raise your hand to pat her shoulder. Startled at first, she turns to you, and the sadness in her eyes softens. Although the cold wind still rages, a warmth now blossoms between you. She offers you a grateful smile, and without a word, your hearts draw closer together. With this silent understanding, you both proceed forward with renewed determination.
+[...Shared classroom scene...]
+CHOICE: Capture the direction of the sound by gently touching the wall with your fingertip|stand_focus
+CHOICE: Grip your knife tightly, ready for battle at any moment|defensive_posture
+
+#ID: verbal_consolation
+TEXT: Seeing the sorrow in her eyes, you softly begin to recount the imagined past of the school—the laughter of children and the lively bustle of the playground. She listens quietly, and a small smile slowly curves her lips. “Those beautiful memories have always endured,” you say. Moved, she looks at you with glistening eyes and murmurs her thanks. In that moment, your bond deepens, and you both grow to cherish one another even more.
+[...Shared classroom scene...]
+CHOICE: Capture the direction of the sound by gently touching the wall with your fingertip|stand_focus
+CHOICE: Continue bending down, grasping a worn-out textbook with your fingertip|stand_focus
+CHOICE: Grip your knife tightly, ready for battle at any moment|defensive_posture
+CHOICE: Pick up the metal pipe from the ground and swing it toward the corner|defensive_posture
+
+#ID: stand_focus
+TEXT: That strange sound strikes your nerves like a sharp needle. You abruptly cease your searching, and the worn textbook you were handling slips from your grasp and falls to the ground with a dull thud. Holding your breath, you strain to catch the faint variations in the sound while your eyes vigilantly scan the dim surroundings in search of its source. In the murk, your eyes meet hers, and you both feel the tension and caution radiating between you. Suddenly, a figure slowly emerges from the shadows...
+[...Radiation contamination warning and reaction...]
+CHOICE: Pick up an old textbook and urge an immediate return to camp|with_fear
+CHOICE: Put your gloves on and agree to set off immediately|power_station
+
+#ID: defensive_posture
+TEXT: At the sound’s onset, alarm bells ring in your heart. You quickly raise your hand to signal her to halt, your eyes brimming with caution. Driven by a sudden surge of fierce curiosity, you waste no time. You pick up the metal pipe from the ground and swing it toward the corner. One hand clutches your makeshift weapon tightly, your palms slick with sweat, as you fix your gaze on the shadow ahead—attempting to pierce the darkness and discern the source of that chilling sound. As you draw near, the so...
+CHOICE: Pick up an old textbook and urge an immediate return to camp|with_fear
+CHOICE: Put your gloves on and agree to set off immediately|power_station
+
+#ID: with_fear
+TEXT: You both stand in the very corner where the vagrant had just lingered. She pulls off a part of her protective mask as the radiation detector between you begins to scream once more—“Remove even half a layer of protective clothing and you might as well be a corpse; being alive is no better than being among the living dead.” With a cold laugh, she adds, “You’d better get out now if you can.”
+Your face flushes red as you exclaim, “Let’s leave immediately!”
+CHOICE: Appear Calm on the Surface, Though Internally Anxious|power_station
+
+#ID: power_station
+TEXT: Chapter 4: The Abandoned Power Station
+After leaving the abandoned school, the bitter wind still rages as you and she trudge through the wind and snow toward the abandoned power station. Along the way, the desolate, radiation-scarred landscape follows you like a shadow, and the oppressive silence grows even heavier. When the ruined power station finally comes into view, its dilapidated appearance is truly shocking. Ravaged by the nuclear disaster, it has suffered severe damage—with parts of the structure already collapsed—yet some massive frameworks still stubbornly stand, as if silently recounting the glory of the past and the desolation of the present.
+CHOICE: Steady your gaze and feel the resonance of the mycelium vibrations|focus_research
+CHOICE: Bend down to collect the glowing spores as they burst with fluorescence|focus_research
+CHOICE: Grab your companion by the arm as the fungal network suddenly contracts|anticipate_mutation
+CHOICE: Turn and retreat as the instrument’s readings soar out of control|anticipate_mutation
+
+#ID: focus_research
+TEXT: Seeing the ring of mushrooms radiating a mysterious glow ignites your curiosity instantly. A surge of strong impulse overcomes you—you long to discover its secrets. Without hesitation, you say to her, “Let’s get closer to the mushroom ring and see what’s inside.” With that, you slightly lean forward, clenching your fists as you carefully approach the ring, your eyes filled with both anticipation and tension.
+You examine the glowing mushrooms in the ring closely. Trusting your intuition, you believe that these fungi might hold significant research value for her studies. Turning to her, you suggest, “Why don’t we collect some of these glowing mushrooms? They might prove valuable for our research.” As you speak, you reach into your pocket and retrieve a simple collection container, poised to act at a moment’s notice.
+CHOICE: Hurry forward into the portal, letting the light envelope your body|unknown_realm
+CHOICE: Pause, hesitating as you observe the changes around you|cautious_waiting
+
+#ID: cautious_waiting
+TEXT: She remains crouched, completely absorbed in collecting the fungal samples from the ring; her movements are gentle and practiced as she carefully places each specimen into the specially designed container. Once she finishes and stands up, her eyes betray a mix of curiosity and contemplation as she regards the newly formed portal amidst the glowing mushrooms. At that point, you fix your gaze deep into the mesmerizing light of the mushroom ring and, in a steady and courageous tone, say, “Let’s head out. No matter what lies ahead, we must explore it.” Your boldness and fearlessness shine like a beacon, instantly dispelling her lingering doubts. She turns to you, and in that moment a new fondness shines in her eyes.
+CHOICE: Slowly advance and step into the portal|unknown_realm
+
+#ID: anticipate_mutation
+TEXT: Gazing at the eerie glow of the mushroom ring—and recalling the myriad dangers of this radiation zone—a warning bell rings loudly in your mind. You quickly move to her side, your expression grave as you warn, “We must be extremely cautious. I really think we should not get any closer to the mushroom ring.” Your eyes brim with concern as you watch her, hoping she will heed your advice.
+The unsettling atmosphere of the area fills you with apprehension; you know that rash actions here could lead to unpredictable risks. Resolutely, you add, “I think we should leave this area now to avoid unnecessary dangers.” As you speak, you scan the surroundings warily, prepared to retreat at a moment’s notice.
+CHOICE: Restart|start
+
+#ID: unknown_realm
+TEXT: Chapter 5: The Unknown Realm
+A wave of dizziness overtakes you, and suddenly you are transported to an unknown place. As you gradually regain consciousness, you realize with shock that you are in a completely unfamiliar world. The air is filled with bizarre energy fluctuations, and all around you are luminescent mushrooms of various shapes—some resembling delicate lanterns, others like outstretched hands. Their soft glow illuminates the strange, exotic plants surrounding you.
+CHOICE: Reach out and touch, as the strange light suddenly flares|explore_mystery
+CHOICE: Listen intently to the ambient sounds as faint whispers emerge|explore_mystery
+CHOICE: Observe the surroundings, noting the fluctuating energy flows|analyze_clues
+CHOICE: Call out to your companion, the echo strangely reverberating|analyze_clues
+
+#ID: explore_mystery
+TEXT: You and she walk side by side along a glowing ring of mushrooms; the ground beneath is soft and emits a gentle luminescence. As you venture deeper, you discover a hidden cave, its entrance concealed by tangled vines. The cave’s opening radiates a mysterious light, as if beckoning you forward.
+CHOICE: Hurry forward into the portal, letting the light envelope your body|unknown_realm
+CHOICE: Pause, hesitating as you observe the changes around you|cautious_waiting
+
+#ID: cautious_waiting
+TEXT: She remains crouched, fully absorbed in collecting fungal samples from the mushroom ring. Her movements are gentle and precise as she carefully places each specimen into a specially designed container. Once she finishes and stands, her eyes reveal a mix of curiosity and contemplation as she regards the newly formed portal amid the glowing fungi.
+CHOICE: Slowly advance and step into the portal|unknown_realm
+
+#ID: analyze_clues
+TEXT: After a dizzying moment, you and she are transported to this mysterious realm—but fate plays its cruel hand: upon arrival, you become separated. You find yourself amidst a thicket of glowing mushrooms, where mysterious streams of energy flow like vivid, undulating ribbons, darting through the air.
+CHOICE: Restart|start

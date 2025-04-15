@@ -1,6 +1,6 @@
 {
   "$GMProject":"",
-  "%Name":"Finding Love in Chernobyl",
+  "%Name":"Dialogue",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -38,6 +38,14 @@
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"chatterbox_license.txt","CopyToMask":-1,"filePath":"datafiles","name":"chatterbox_license.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+<<<<<<< Updated upstream
+=======
+    {"$GMIncludedFile":"","%Name":"dialogue_doctor.txt","CopyToMask":-1,"filePath":"datafiles","name":"dialogue_doctor.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"dialogue_dryad.txt","CopyToMask":-1,"filePath":"datafiles","name":"dialogue_dryad.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"dialogue_ooze.txt","CopyToMask":-1,"filePath":"datafiles","name":"dialogue_ooze.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"dialogue_priest.txt","CopyToMask":-1,"filePath":"datafiles","name":"dialogue_priest.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"dialogue_story.json","CopyToMask":-1,"filePath":"datafiles","name":"dialogue_story.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+>>>>>>> Stashed changes
     {"$GMIncludedFile":"","%Name":"example_speakerdata_sprite.chatter","CopyToMask":-1,"filePath":"datafiles","name":"example_speakerdata_sprite.chatter","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"example.chatter","CopyToMask":-1,"filePath":"datafiles","name":"example.chatter","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"localization table.csv","CopyToMask":-1,"filePath":"datafiles","name":"localization table.csv","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -88,13 +96,22 @@
   "MetaData":{
     "IDEVersion":"2024.11.0.179",
   },
-  "name":"Finding Love in Chernobyl",
+  "name":"Dialogue",
   "resources":[
+<<<<<<< Updated upstream
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"obj_bin","path":"objects/obj_bin/obj_bin.yy",},},
     {"id":{"name":"obj_boulder","path":"objects/obj_boulder/obj_boulder.yy",},},
     {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},},
     {"id":{"name":"obj_control2","path":"objects/obj_control2/obj_control2.yy",},},
+=======
+    {"id":{"name":"fnt_dialogue","path":"fonts/fnt_dialogue/fnt_dialogue.yy",},},
+    {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
+    {"id":{"name":"obj_bin","path":"objects/obj_bin/obj_bin.yy",},},
+    {"id":{"name":"obj_boulder","path":"objects/obj_boulder/obj_boulder.yy",},},
+    {"id":{"name":"obj_control_dryad","path":"objects/obj_control_dryad/obj_control_dryad.yy",},},
+    {"id":{"name":"obj_control_preacher","path":"objects/obj_control_preacher/obj_control_preacher.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"obj_dryad_pixel","path":"objects/obj_dryad_pixel/obj_dryad_pixel.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_fire","path":"objects/obj_fire/obj_fire.yy",},},
@@ -197,6 +214,10 @@
     {"id":{"name":"ChatterboxWait","path":"scripts/ChatterboxWait/ChatterboxWait.yy",},},
     {"id":{"name":"functions","path":"scripts/functions/functions.yy",},},
     {"id":{"name":"IsChatterbox","path":"scripts/IsChatterbox/IsChatterbox.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"scr_load_node","path":"scripts/scr_load_node/scr_load_node.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"backgrounds","path":"sprites/backgrounds/backgrounds.yy",},},
     {"id":{"name":"backgrounds2","path":"sprites/backgrounds2/backgrounds2.yy",},},
     {"id":{"name":"characters","path":"sprites/characters/characters.yy",},},
