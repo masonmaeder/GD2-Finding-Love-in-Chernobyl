@@ -1,15 +1,15 @@
 var node = dialogue_nodes[? current_node];
 
-//Text and Box Style
+//text
 draw_set_font(fnt_dialogue);
 draw_set_color(c_white);
 
-// === Portrait ===
+//character portrait
 var char_x = 275;
 var char_y = room_height - (size[0]);
 draw_sprite_ext(character_sprite, 0, char_x, char_y, size[0], size[0], 0, colour[0], 1);
 
-//Dialogue Box
+//dialogue box
 var margin = 32;
 var box_w = room_width - 64;
 var box_h = 220;
@@ -22,13 +22,13 @@ draw_rectangle(box_x, box_y, box_x + box_w, box_y + box_h, false);
 draw_set_alpha(1);
 draw_set_color(c_white);
 
-//Typewriter Text
+//typewriter text
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 var shown_text = string_copy(typewriter_text, 1, typewriter_index);
 draw_text_ext(box_x + 24, box_y + 24, shown_text, -1, box_w - 48);
 
-//Choices (only after last page is done)
+//choices
 if (!is_typing && current_page == array_length(pages) - 1) {
     var choice_x = room_width / 2;
     var choice_start_y = room_height / 2 - 140;
@@ -38,7 +38,6 @@ if (!is_typing && current_page == array_length(pages) - 1) {
 
     var choice_data = [];
 
-    // Pass 1: Precompute choice text + height
     for (var i = 0; i < array_length(node.choices); i++) {
         var raw = node.choices[i][0];
         raw = string_replace_all(raw, "’", "'");
@@ -54,7 +53,6 @@ if (!is_typing && current_page == array_length(pages) - 1) {
         array_push(choice_data, [choice_text, box_height]);
     }
 
-    // Total height for centering
     var total_height = 0;
     for (var i = 0; i < array_length(choice_data); i++) {
         total_height += choice_data[i][1];
@@ -63,17 +61,15 @@ if (!is_typing && current_page == array_length(pages) - 1) {
 
     var y_cursor = choice_start_y - total_height / 2;
 
-    // Pass 2: Draw each choice
+    //Draw choices
     for (var i = 0; i < array_length(choice_data); i++) {
         var choice_text = choice_data[i][0];
         var box_height = choice_data[i][1];
 
-        // Background
         draw_set_alpha(0.85);
         draw_set_color(make_color_rgb(25, 25, 25));
         draw_rectangle(choice_x - choice_width / 2, y_cursor, choice_x + choice_width / 2, y_cursor + box_height, false);
 
-        // Text
         draw_set_alpha(1);
         draw_set_color(c_white);
         draw_set_halign(fa_left);
@@ -85,4 +81,25 @@ if (!is_typing && current_page == array_length(pages) - 1) {
 
         y_cursor += box_height + vertical_spacing;
     }
+
+    //Leave button
+    var count = array_length(node.choices);
+    var is_leave_selected = (selected_choice == count);
+
+    var leave_text = (is_leave_selected ? "> " : "  ") + "Leave";
+
+    var btn_x = room_width - 180;
+    var btn_y = room_height - 80;
+    var btn_w = 140;
+    var btn_h = 40;
+
+    draw_set_alpha(0.9);
+    draw_set_color(make_color_rgb(40, 40, 40));
+    draw_rectangle(btn_x, btn_y, btn_x + btn_w, btn_y + btn_h, false);
+
+    draw_set_alpha(1);
+    draw_set_color(c_white);
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_text(btn_x + btn_w / 2, btn_y + btn_h / 2, leave_text);
 }

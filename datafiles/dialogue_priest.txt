@@ -1,194 +1,167 @@
+
 #ID: start
-TEXT: Chapter 1: A Cold Night’s First Encounter
-You—a wanderer who has lost your memory—struggle through a frozen, snowy night. Hunger, cold, and confusion shadow your every step; your legs feel as if they are filled with lead. The radioactive snow and fog blur your vision, leaving you disoriented amid the ruins, as your consciousness gradually fades. Just as the flame of life seems about to be snuffed out, you notice a barely visible bonfire in the camp—a beacon of hope flickering in the darkness.
-The camp sits at the edge of the main area, with a few worn-out tents swaying in the howling wind around the crackling bonfire. This fire is the camp’s only source of warmth and light; sparks fly in defiance, as if fighting against the dark. Around the bonfire, weathered survivors sit together, their eyes shining with a desperate longing for life. This temporary shelter, laden with hope and helplessness, serves as a place for fellowship and mutual aid.
-As you approach the bonfire, one figure captures your attention—the priest. Clad in a shabby black robe that flutters in the wind, he wears a stained white shawl that nevertheless appears refined; the golden cross on it glimmers mysteriously in the firelight. The priest is tall and slender, his angular, gaunt face marked by distinct features. His brown hair is slightly disheveled, with strands dancing in the breeze. Beneath a prominent nose, his thin lips curve into a gentle, enigmatic smile, and his dee...
-Breaking the silence first, the priest speaks in a low, warm voice that carries clearly over the wind:
-“Traveler from afar, you seem lost.”
-At that moment, your heart swells with mixed emotions, and you are faced with a choice:
-CHOICE: Step forward slowly and honestly confess your memory loss|honest
-CHOICE: Stand still, remaining silent|honest
-CHOICE: Look around in confusion and ask why you have come here|curious
-CHOICE: Approach actively and gesture with your hands to inquire about the surroundings|curious
+TEXT: You trudge through a cold night, disoriented by radioactive fog and ruins. Fading fast, you glimpse a distant bonfire—a fragile beacon of hope against the dark. The camp shelters survivors huddled around the fire. Among them, one figure draws your attention: a priest in a tattered black robe. You notice a serene smile coming from his pale face. “Hey, you seem lost.” He takes his robe off and rests it on you. At that moment, your heart swells with mixed emotions, and you are faced with a choice:
+CHOICE: Step forward slowly and honestly confess your memory loss.|honest
+CHOICE: Stand still, remaining silent.|honest
+CHOICE: Look around in confusion and ask why you have come here.|curious
+CHOICE: Approach actively and inquire about the surroundings.|curious 
 
 #ID: honest
-TEXT: Your voice trembles as you say, “I’ve lost my memory—I don’t know who I am.” With those words, a wave of loneliness crashes over you; you lower your gaze, unable to meet the priest’s eyes.
-He steps closer and gently brushes the snow from your shoulder. In a low, warm tone he comforts you:
-“Losing your memory is painful, but here, you can rediscover yourself. I am guided by God to spread hope.”
-Reaching into his coat, he produces an old radio, and as music begins to flow out, it seems to chase away the fear within you. Smiling, he adds, “Music soothes the soul, and faith can light up the darkness.”
-Amid the gentle strains of music, he tells you stories of faith and shares his hopeful vision for the future, his voice resolute and warm. You feel the chill of loneliness replaced by warmth, and in the light of his eyes, you see hope shining through.
-“From today, I will help you get acquainted with life in the camp,” he says as he guides you around, introducing you to the other survivors. Though life is hard, their faces are softened by hopeful smiles. The priest assures you, “We will work together to rebuild our home. You are not alone—we are all here.”
-Under his care, you gradually become familiar with camp life. Every morning, you join him in prayer at the chapel, feeling the power of faith. In the evening, you gather around the bonfire to listen to classical music and share your stories. Slowly, your heart fills with warmth and strength, and the loneliness begins to fade. An unspoken bond forms between you—one that you come to rely on, and he, in turn, is ever ready to support you. In this desolation, you find each other, and together you find hope.
-One day, the priest looks at you intently and says, “We need to secure more supplies for the camp. Will you join me tomorrow in exploring the main residential area?”
-CHOICE: With resolute eyes, “I am willing. I want to contribute to the camp.”|camp_life
-CHOICE: With a trembling voice, “I’m a little scared; I’m not sure I can do it.”|timid
+TEXT: Your voice trembles as you say, “I’ve lost my memory—I don’t know who I am.” With those words, a wave of sadness crashes over you; you lower your gaze, tears swelling in your eyes. He steps closer and gently brushes the dirt from your shoulder. In a low, warm tone he comforts you: “Losing your memory is painful, but here, you can rediscover yourself. I am guided by God to spread hope among the survivors.”
+CHOICE: "Do you really think I can find myself again? I feel so... lost."|honestagain
+CHOICE: "Then I’ll do whatever it takes. I want to rediscover who I am."|honestagain 
+
+#ID: honestagain
+TEXT: “I will help you get to know everyone here” he says gesturing to the other survivors. “We will work together. You are not alone—we are all here. However, we need some optimism in these hard times. We seem to have been going through a hard time lately.”
+CHOICE: “Yes, I'd like to help if you all are willing to take me in.”|camp_life
+CHOICE: “I’m afraid; I’m not sure I can do it.”|timid 
 
 #ID: timid
-TEXT: The priest’s eyes soften as he gently pats your shoulder and recounts, in vivid detail, the dangerous yet successful expeditions he has undertaken before—tales filled with both peril and wonder. Bit by bit, his sincere words dispel your fear, and eventually you are persuaded to join him.
-CHOICE: You both live together for a time|camp_life
+TEXT: The priest’s eyes soften as he gently pats your shoulder. "Are you sure? I'd love for you to join us." His sincere words dispel your fear, and eventually you are persuaded to join the community.
+CHOICE: Continue.|camp_life 
 
 #ID: curious
-TEXT: With a trembling and fearful voice, you ask, “Where is this place? Why did I come here?” His eyes fill with sorrow, as if the ruins themselves are reflected in them, and he replies, “This is Pripyat—once a thriving city, now shrouded in disaster. Perhaps fate has brought you here.”
-He draws you to sit by the bonfire, the warm light illuminating your faces, and begins a slow, poignant account of the city’s history.
-In his deep, magnetic voice, the priest describes Pripyat’s calamity—from its once-towering buildings and bustling streets to the present state of ruins and silence. Every detail leaves you stunned. Overwhelmed by curiosity, a strong urge surges within you to understand all that has happened and to discern your own connection to this land. “I want to explore, to see if I can find more information about this place,” you exclaim eagerly.
-The priest frowns, concern flashing in his eyes, “This place is very dangerous; radiation and unknown threats lurk everywhere. You have just arrived and are unfamiliar with the dangers—it would be too reckless to venture out on your own.”
-Yet driven by curiosity, you insist, “I know the risks, but I must try. I feel a connection between me and this place—perhaps it holds clues about who I am.”
-Rising to your feet with determination in your eyes, you prepare to set off. He sighs with resignation and care, “Very well, but promise me you will be careful. I will wait in the camp; if you encounter danger, return immediately.”
-You nod, your heart filled with gratitude, and set off alone into the radiation zone, with hope and apprehension mingling within you.
-It isn’t long before you realize that the priest’s concerns were not unfounded. The radiation zone is harsher than you imagined—with fissured ground and an air reeking with acrid fumes. Despite your caution, you inadvertently trigger a hidden trap. A sudden force strikes you, and you collapse to the ground.
-You struggle to rise, but your strength fades. Overwhelmed by peril, regret and fear grip you. You try to call out the priest’s name, but your voice is swallowed by the roaring wind.
-Just as you are about to give up, the priest’s figure appears suddenly. Seeing you injured, his eyes reveal a mix of resignation and concern, “You were too impulsive, not listening to my warning.”
-Quickly, he helps you return to the camp.
-Your leg is injured so severely that you can barely walk. With skilled and gentle care, the priest tends to your wound. As you lie on a makeshift bed watching him, a deep guilt overwhelms you: “I’m sorry—I was too impulsive.”
-CHOICE: Restart|start
+TEXT: With a trembling voice, you ask, “Where is this place? Why did I come here?” His eyes fill with sorrow. He replies, “This is Pripyat—once a thriving city, now destroyed. Perhaps fate brought you here.” He draws you to sit by the bonfire, the fire warming your hands and faces. “I want to explore, to see if I can find more information about this place,” you say. The priest frowns, concern flashing in his eyes, “This place is very dangerous; radiation is everywhere. It would be too dangerous to venture out on your own.” You insist, sounding more determined, “I should try at least!” He sighs, “Fine, but promise me you will be careful.” You nod, your heart filled with gratitude knowing at least one person as your back.
+CHOICE: Explore|injured 
+
+#ID: injured Walking into the gated area, you realize the priest might've been right. If you weren't so impulsive. The air is oddly thick and the fumes cause some dizziness. However, you continue walking through the fog.
+CHOICE: Explore the emitting smoke.|smokearea
+CHOICE: Explore the trees you see in the distance.|forestarea 
+
+#ID: smokearea While you don't know which direction you're in, the smoke in the distance looks interesting. The smoke is green instead of the usual grey smoke you're accustomed to. "Are those smokestacks?" You ask yourself.
+CHOICE: Continue exploring.|faintedlol 
+
+#ID: forestarea While you don't know which direction you're in, the trees in the distance look interesting. "Why would there be trees in a radiated area?" You ask yourself.
+CHOICE: Continue exploring.|faintedlol 
+
+#ID: faintedlol Perhaps the air is getting to you. Unbeknownst to you, you faint.
+CHOICE: Try to wake up.|wakeup 
+
+#ID: wakeup You wake up, hearing a the priests voice, “You were too impulsive, not listening to my warning.” As you lie on a makeshift bed watching him, a deep guilt overwhelms you: “I’m sorry—I was too impulsive.” "It's fine. I followed you to make sure everything was alright. I saw you drop," he chuckles a bit, "and carried you back here."
+CHOICE: Facepalm.|embarrassed 
+
+#ID: embarrassed You slap your forehead in embarrassment. "I'm sorry..." your vision starts to come back. The realization dawns upon you, you're in his tent. "It's certainly alright." He rests a wet cloth on your forehead. "Now get some more rest, that radiation is deadly without these." He holds up a gas mask. "I should've gave you one but I wanted you to see how deadly it was out there."
+CHOICE: You're kind of mad, you could've explored more.|gasmaskannoyed
+CHOICE: You're happy, at least someone has your back.|thankfulforpriest 
+
+#ID: gasmaskannoyed "You're telling me I could've explored more??" you question. "I mean-yes? But otherwise, you might've encountered some dangerous people out there." "What do you mean by that?" you sit up quickly. He dashes to you, guiding you to lay back down. "I mean that not all of us are friendly. You might die if you say or do the wrong thing."
+CHOICE: Continue.|thankfulforpriest 
+
+#ID: thankfulforpriest "Well, thank you for helping me." You smile and he smiles back at you. He leaves his tent, giving you time to rest.
+CHOICE: Take some time to rest.|camp_life 
 
 #ID: camp_life
-TEXT: Chapter 2: Camp Life
-After you and the priest gradually become familiar with daily life at the camp, one evening dinner time arrives. Everyone gathers around the bonfire, sharing the few rations available. You sit next to the priest, and he offers you a relatively fine piece of bread from his own share. You now face a choice:
-CHOICE: Cheerfully accept with gratitude|camp_mutual_aid
-CHOICE: Politely decline with a hint of reservation|camp_personal_choice
+TEXT: You and the priest gradually become familiar with one another, even if it's only been a day or so since you've met. Perhaps it's the fact that you both know you'll die soon causing you both to well acquainted. One evening dinner time arrives and everyone gathers around the bonfire. Sharing the few rations available, you eat slowly. You sit next to the priest, and he offers you a piece of bread from his own share.
+CHOICE: Accept with gratitude|camp_mutual_aid
+CHOICE: Politely decline|camp_personal_choice 
 
 #ID: camp_mutual_aid
-TEXT: “Eat more—you’ve been working so hard these past few days and have lost weight,” he says, watching you with concern. Warmth fills your heart as you take the bread and reply, “Don’t just worry about me; you need to eat enough too, so you have the strength.” You break the bread in half and hand one half back to him. In this simple act of sharing food, you exchange smiles, and those around you watch with envy. In that moment, your bond deepens through these small, everyday acts.
-Later during an exploration, you accidentally wander near the edge of the radiation zone. Suddenly, you feel a sharp, stinging pain throughout your body, followed by nausea and dizziness. Realizing you’ve developed mild radiation sickness, you urgently call for his help. The priest quickly rushes you back to the camp, where he uses his limited medical skills to treat your wounds and gives you a homemade anti-radiation remedy. His eyes, full of concern, bring a long-forgotten warmth to your heart.
-CHOICE: Step forward slowly and gently push open the basement door|camp_brave_exploration
-CHOICE: Grasp the doorknob, test it, and then push it open forcefully|camp_brave_exploration
-CHOICE: Grab the priest and suggest we do not go in|camp_cautious_action
-CHOICE: Reach out to touch the door, then hesitate and step back|camp_cautious_action
+TEXT: “Eat more—you're looking more sick today” he says, watching you with concern. You take the bread, unsure if you should. “Thank you... but you need to eat enough too.” You break the bread in half and hand one half back to him. You give him the rest of your can of soup. "Thank you." He says quietly, smiling. "We should prepare to scavenge now."
+CHOICE: Go prepare|camp_scavenge 
 
 #ID: camp_personal_choice
-TEXT: When the priest offers you the bread, you feel a momentary hesitation. Not used to such intimate gestures—in this desolate place where everyone is preoccupied with their own survival—you force a small smile and politely reply, “No, thank you. You eat it yourself—I’m not really hungry.” You turn your head away, unwilling to meet his eyes, trying to hide the turmoil inside. The priest appears somewhat surprised; his hand lingers in mid-air for a moment before he silently takes back the bread.
-Later, during an exploration, you find yourself near the edge of the radiation zone and quickly develop mild radiation sickness. Your body is overwhelmed by sharp pains, nausea, and dizziness that leave you barely able to stand. Though you had hesitated earlier by refusing the priest’s bread, your worsening condition compels you to call for help.
-Upon hearing your plea, the priest immediately drops what he’s doing and rushes over. Seeing your pale face, his eyes fill with urgency as he swiftly carries you back to the camp, gently comforting you along the way. Back at the camp, he places you on a makeshift bed and quickly administers his homemade anti-radiation remedy, soothing your fears with his gentle reassurances. Watching him work with such tender dedication, you feel a surge of gratitude and guilt, longing to apologize. But the priest smiles and interrupts, urging you simply to rest. His warm, compassionate gaze makes you realize that your bond has grown even stronger through this ordeal.
+TEXT: When the priest offers you the bread, you feel hesitant. You force a small smile, knowing you're starving, and politely reply, “No, thank you. You eat it yourself—I’m not really hungry.” You turn your head away. The priest appears somewhat surprised, he thought you wanted a piece. "We should prepare to scavenge now." He says.
+CHOICE: Go prepare|camp_scavenge 
+
+#ID: camp_scavenge During the scavenge, you and the priest search the dilapidated building close to the camp. The priest searches one of the rooms in the back while you walk down some steps to find a basement door.
 CHOICE: Step forward slowly and gently push open the basement door|camp_brave_exploration
 CHOICE: Grasp the doorknob, test it, and then push it open forcefully|camp_brave_exploration
 CHOICE: Grab the priest and suggest we do not go in|camp_cautious_action
-CHOICE: Reach out to touch the door, then hesitate and step back|camp_cautious_action
+CHOICE: Reach out to touch the door, then hesitate and step back|camp_cautious_action 
 
 #ID: camp_brave_exploration
-TEXT: The door creaks as if whispering tales of bygone eras. You peer inside and see dim light streaming through the gap, casting mottled shadows on the floor...
-CHOICE: Curiously investigate the rumors of the mysterious arms dealer|rumors_mysterious_dealer
-CHOICE: Worry about the danger and refuse to go|camp_concerned_hesitation
-
-#ID: camp_concerned_hesitation
-TEXT: You express your concerns to the priest, feeling that dealing with the mysterious arms dealer is too risky. The priest patiently explains the potential benefits of such an encounter...
-CHOICE: Pack your bag and set off immediately|rumors_mysterious_dealer
+TEXT: The door creaks as if whispering tales of what was once here. You peer inside and see dim light streaming through the gap, casting shadows on the floor...
+CHOICE: Curiously investigate|rumors_mysterious_dealer
+CHOICE: Worry about the danger and refuse to go|camp_cautious_action 
 
 #ID: camp_cautious_action
-TEXT: You stand still, your body trembling slightly as unease spreads through you. Glancing back at the priest, you gesture to him in silent warning and whisper, “I don’t feel right; maybe we shouldn’t go in.”...
-CHOICE: Restart|start
+TEXT: You express your concerns to the priest, the basement feels eerie. Glancing back at the priest, you gesture to him in silent warning and whisper, “I don’t feel right; maybe we shouldn’t go in.”
+CHOICE: Set off immediately|priest_mysterious_encounter 
+
+#ID: priest_mysterious_encounter
+TEXT: You start to make a run for the stairs until he grabs your hand, pulling you back to him. "Hey.." he holds your shoulders. "Let's just see what's down here and make our way back after. I'm here with you. Everything will be okay." You look at the stairs, wanting to run up. Although you're reluctant, you abide.
+CHOICE: "Fine..." You both open the door with him walking in first.|rumors_mysterious_dealer 
 
 #ID: rumors_mysterious_dealer
-TEXT: Chapter 3: Rumors of the Mysterious Arms Dealer
-In the desolate land of Pripyat, the corners of the camp ruins are often where mysterious energies converge. Recently, whispers of a mysterious arms dealer have quietly spread among the camp residents, sparking their curiosity.
-This arms dealer appears unexpectedly, always clad in a tattered gray coat with his hood and mask concealing his face, revealing only a pair of piercing eyes. He carries various weapons and rare supplies, drawing a crowd whose eyes gleam with longing and awe.
-You and the priest are drawn to this corner, observing the arms dealer and listening to the murmurs of others. You learn that some believe he holds the secrets of Pripyat—secrets that might be the key either to the city’s resurgence or to helping survivors find better ways to live.
-Noticing your gaze, the arms dealer slowly approaches you, his steps measured and assured. He scrutinizes you both before speaking in a hoarse, penetrating voice:
-“Come now, you two—you don’t seem content merely to scrape by here at the camp.”
-His eyes shift toward the radiation zone as he continues, “Deep within that dangerous area lies the key that can truly change everything.” He finishes with a mysterious smile as if hinting at hidden truths.
-At this moment, you face a choice:
-CHOICE: Decide to venture, and delve deep into the radiation zone to seek the secret|radiation_adventure
+TEXT: The basement is pitch black. You feel around you for a switch or string to pull the light on. You notice the priest is terrified. You see him shaking uncontrollably.
+CHOICE: Grab his hand.|priest_hand
+CHOICE: Tell him you both can leave.|priest_leave 
+
+#ID: priest_hand
+TEXT: You grab his hand, caressing it to give him some confidence. You whisper, "it's okay. Trust me." Although you're absolutely terrified too, you endure it to make him feel some comfort.
+CHOICE: Continue.|dealer_found 
+
+#ID: priest_leave
+TEXT: You whisper, "We can leave if you'd like to?" You hold onto his shoulder. "I can also walk first if that makes you feel better." He nods, still shaking.
+CHOICE: Continue.|dealer_found 
+
+#ID: dealer_found
+TEXT: He starts to breathe heavily, panic running through his body. "Breathe." you say, putting his hand against your heart. "Follow my breaths, slow and steady." He follows your breathing pattern, you can tell he's smiling. And then, some laughter arises from he corner. An unfamiliar voice?
+CHOICE: "Hello?"|dealer_call_out
+CHOICE: Run.|dealer_run 
+
+#ID: dealer_run
+TEXT: You both start to make a run for it until the voice starts again. "Woah, hold on. It's just funny." The voice laughs even harder, "okay calm down."
+CHOICE: Continue.|dealer_call_out 
+
+#ID: dealer_call_out
+TEXT: "So you found where I'm staying hmm?" The voice turns on the flickering light. It's a younger man sitting on an old mattress. You've heard about the arms dealer, but you didn't think he was so friendly with the priest. "It's great to see you again priest." "Jesus, Mary, and Joseph," the priest punches the man in the shoulder, "almost scared me to heavens." "Sorry I missed the last few sermons." The dealer replies. The two fall into deep conversation. You learn that some believe he holds secrets that might be the key either to the city’s resurgence or to helping survivors find their way back home. Noticing your gaze, the arms dealer slowly approaches you. “How the hell did you two survive out there like this?” "We were staying near the tents. I'd like to think it was the campfire." "Yeah... sure." The dealer mocks. “Look, I want you to do something for me." He locks eyes with the priest. "Yes?" The priest responds. "Deep within that radiation zone lies the key that can truly change everything. We've tried to look through it a few times, some of us didn't make it back.” He starts to cough. "I don't think I have much time left." The priest sits down next to the dealer, patting his back. "Are you sure there's something worthy there?" "I'm not sure, but there's nothing out here for us." He coughs again, this time blood. "Why not risk it if we're all going to end up 6ft under anyway?" At this moment, you're faced with a choice:
+CHOICE: Decide to venture the radiation zone|radiation_adventure
 CHOICE: Set off immediately to infiltrate the radiation zone in search of clues|radiation_adventure
 CHOICE: Decide to give up and return to camp to avoid the risk|radiation_safe
-CHOICE: Choose safety, and return to camp to await further news|radiation_safe
-
-#ID: radiation_adventure
-TEXT: With determined eyes, you and the priest decide to step into the dangerous radiation zone together, intent on uncovering its secrets. The arms dealer hands you protective gear and warns you to be cautious. Once you have donned the gear, you both move into the radiation zone side by side, confronting the acrid stench and the swirling dust laden with radiation.
-On a cracked asphalt road, sporadically lit by flaming barrels, you huddle together in a low-lying area where the radiation dust gathers and the wind howls relentlessly. The priest shields you from the biting sand and wind with his body. Looking up at his gentle face, you whisper with deep affection,
-“I have never regretted walking into this dangerous place with you.”
-The priest tenderly strokes your cheek and smiles, “Ever since our first meeting by the campfire, I knew you would be someone extraordinary in my life. With you by my side on this journey, I am truly happy.”
-Your eyes well up with tears that quickly dry in the dusty wind, and you murmur, “Without you, I would have fallen long ago. Each time I felt I couldn’t go on, your unwavering gaze gave me the strength to continue.”
-He embraces you tightly and gently kisses your forehead, “You have given me a reason to love this broken world again. Your bravery and kindness make me believe that even in the darkest times, beauty can be found.”
-As the wind subsides and silence falls over the desolation—almost as if the wasteland itself is mourning—the two of you share a quiet moment. Leaning into his embrace, you softly say, “At least we’re not alone. Walking this path together, I have no regrets.”
-He nods, resting his chin on your head, “We will face it all together. One day, in another life, we’ll find a place free from radiation and disaster.”
-CHOICE: Restart|start
+CHOICE: Choose safety, and return to camp to await further news|radiation_safe 
 
 #ID: radiation_safe
-TEXT: After hearing the arms dealer describe the perils of the radiation zone, you decide not to risk adventure for now. You make your sentiments known to both the arms dealer and the priest, then return to camp. Once back, you settle into a stable life in the camp—helping repair equipment and sharing the few available supplies with the other survivors.
-Still, your curiosity about the radiation zone’s secrets lingers. You begin to pay closer attention to related rumors, eager to gather information from the experiences of others. You learn that a group of survivors once ventured to the very edge of the radiation zone and returned with strange trinkets. You approach them, piecing together details about the hazards and safety measures necessary within the zone.
-With the skills and knowledge you accumulate, you help resolve many problems at camp, gradually becoming indispensable. The information you collect provides essential guidance for formulating strategies, and your cautious choices allow you to contribute to camp life safely.
-Through your efforts, you begin to understand the importance of teamwork and careful information gathering. Along the way, you and the priest spend many evenings discussing future plans for stabilizing the camp, and the mutual understanding between you deepens.
-At this juncture, a new choice presents itself:
-CHOICE: Decide to venture bravely into the radiation zone|radiation_adventure
-CHOICE: A sudden downpour damages the camp, forcing you to postpone the trip|radiation_delay
-
-#ID: radiation_delay
-TEXT: On the eve of your planned venture into the radiation zone, a fierce storm suddenly descends upon the camp. With roaring winds and torrential rain, numerous facilities are overturned, and tents sway precariously under the onslaught. Everyone rushes into an intense rescue effort.
-Drawing on your rich experience, you lead the charge to reinforce the tents and clear drainage channels, desperately trying to keep the camp from being flooded. In the midst of this emergency, you find you simply cannot leave for the radiation zone, and your planned expedition must be postponed.
-After several days and nights of tireless work, order is gradually restored in the camp.
-However, just then, the patrol team discovers strange tracks in the surrounding area—signs that mutated creatures, likely affected by radiation, are slowly closing in on the camp.
-This news casts a renewed pall of tension over everyone, and it becomes clear that unless the secrets of the radiation zone are uncovered and countermeasures established, the camp could face a dire threat.
-After weighing your options, you and the priest decide to resume your plan to venture into the radiation zone—this time, out of necessity for the camp’s safety, you must act immediately.
-CHOICE: With full confidence, set off immediately|radiation_adventure
+TEXT: After hearing the arms dealer describe the perils of the radiation zone, you decide not to risk adventure for now. You let the arms dealer know that you both will not be going, then return to camp. Although disappointed, the arms dealer understands. After a few days, a pit of guilt and curiosity builds in your gut. You can't help but feel that you both should explore the radiation zone. "Maybe we should go?" You ask the priest. "Maybe there's something there?" "What's with the change in heart now? We told the dealer otherwise." He responds. "I'm not sure.. it's as if somethings calling me to it." "Just like how I got my calling here hm?" You nod. "Okay. We'll head over to the dealer in the morning."
+CHOICE: Wait for the morning.|radiation_adventure 
 
 #ID: radiation_adventure
-TEXT: Chapter 4: The Adventure in the Radiation Zone
-With equal parts apprehension and resolve, you and the priest step into the daunting radiation zone. Immediately upon entry, a nauseating smell assaults your senses—a rancid mix of burnt metal, rotting stench, and the eerie tang of radiation that makes you retch. The ground is lined with trails of glowing slime that wriggle as if alive, leaving behind spine chilling traces. The slime displays bizarre hues: some are a blue‐green reminiscent of otherworldly substances, others a deep red like congealed blood. Along the cracked asphalt, strange cyan flames burst forth intermittently, dancing in a twisted, wavering manner with an unusual heat.
-In the distance, a silent chimney sometimes emits pale gray smoke that twists and disperses, as if telling tales of past disasters. Its surface is scarred by time and radiation erosion—bricks flake off and the structure appears ready to collapse.
-During your arduous journey, you discover a pitiful vagrant. His clothes are tattered, stained, and riddled with holes; marks of radiation burns mar his skin. His body bears mottled scars from prolonged exposure—some areas have even begun to ulcerate, exuding a foul odor. The ulcerated patches are a purple red, surrounded by rough, cracked skin resembling scorched leather. He lies weakly curled up in a corner, his eyes filled with terror and despair.
-CHOICE: Help the vagrant, lift him up and offer food and water|rad_zone_kind
+TEXT: The arms dealer hands you protective gear and warns you to be cautious. With determined eyes, you both leave the dealer to rest.
+CHOICE: Continue later.|radiation_adventure_start 
+
+#ID: radiation_adventure_start
+TEXT: With determined eyes, you and the priest decide to step in together. You both move side by side, confronting the acrid stench and the swirling dust laden with radiation. The wind seems to be heavier this time around though. The fog is as thick as you remember from the first time. The priest shields you from the wind with his body. Looking up at his gentle face, you joke with him. "So, you're not scared of this... but you're scared of the dark." "I have my reasons" he states. "Who'd want to look at this beautiful face in the dark?" You laugh, staring into his eyes through the gas mask, "Not me." "So, where should we go? Towards the smoke or the trees over there?"
+CHOICE: Go towards the smoke.|smoke_stacks_area
+CHOICE: Go towards the trees.|trees_forest_area 
+
+#ID: smoke_stacks_area You both trek towards the smoke, only to discover some smoke stacks. This was likely one of the exit points where the blast escaped from. The smoke stacks seem to be in-tact however. During your arduous journey, you discover a pitiful vagrant. Its clothes are torn and its skin has become leather-like. It lies weakly curled up in a corner, eyes filled terror and tears.
+CHOICE: Help the vagrant, lift them up and offer food and water|rad_zone_kind
 CHOICE: Search nearby for medical supplies and then return to assist the vagrant|rad_zone_kind
-CHOICE: Survey the surroundings and choose to avoid him, continuing onward|rad_zone_cautious
-CHOICE: Hesitantly decide to heartlessly leave him behind|rad_zone_cautious
+CHOICE: Survey the surroundings and choose to avoid them, continuing onward|rad_zone_cautious
+CHOICE: Hesitantly decide to heartlessly leave them behind|rad_zone_cautious 
 
 #ID: rad_zone_kind
-TEXT: Moved by compassion, you step forward without hesitation. You retrieve the little food you have from your backpack and carefully offer it to the vagrant. In an instant, a spark of light shines in his cloudy eyes. His trembling, emaciated hand reaches out and he grasps the food, devouring it hungrily—even as his cracked lips are cut, bleeding in thin trickles, he seems oblivious to the pain. The priest stands nearby, silently approving of your kindness.
-Under your care, the vagrant’s color gradually improves and a hint of life returns to his gaze. Just as he seems about to speak his gratitude, a low, rumbling roar echoes through the area. A pack of mutated beasts, their skin grotesquely twisted and reeking with decay, with eyes that glimmer with a bloody ferocity and jaws baring sharp fangs, suddenly surge toward you.
-You and the priest quickly take defensive positions, backs against each other. You brandish an iron club while the priest lunges with his dagger. The battle is fierce—you sustain cuts on your arm but press on despite the pain. The vagrant, too, joins the fray in a desperate bid to divert the beasts’ attention.
-After a grueling fight, the beasts are repelled. Exhausted, you and the priest sit on the ground, bodies marked with wounds. Amid the ruins, you discover an old, battered chest guarded by the retreating creatures. Inside, you find precious supplies: medical items along with uncontaminated food and water.
-The vagrant then leads you along a hidden pathway, carefully avoiding further hazards and dangerous mutants. As he recounts his own experiences in the radiation zone and hints at secret passageways, you marvel at his intimate familiarity with this toxic land. He recalls a time when, after suffering severe radiation burns, he was saved by something resembling a blob of living slime. You and the priest share a smile, a warmth rising within you both that brings you closer together.
-Before parting ways, the vagrant hands you an old, yet intact compass and wishes you good fortune.
-CHOICE: Immediately proceed in the direction indicated by the vagrant toward the mysterious forest clearing|forest_clearing
-CHOICE: Return to camp to resupply and replan your journey|rad_zone_replan
+TEXT: You step forward without hesitation. You retrieve the little food you have from your backpack and carefully offer it to the vagrant. Their trembling, emaciated hand reaches out and devours the food. The priest stands nearby, silently approving of your kindness. A hint of life seems to return to the vagrant. The vagrant nods. It seems like they can't make much facial expression due to their injuries. The priest asks the vagrant, "You came here with the arms dealer, right?" The vagrant nods once more, attempting to form a smile. "I will try to let him know, he's not in the best condition" the priest remarks. Before parting ways, the vagrant hands you an old, yet intact compass. "Why don't you come along with us?" You ask. The vagrant shakes their head. "They're likely safer here then out there. They've probably built the resistance to be in here without masks." "Thank you so much. We will return when we can." The vagrant appears to be smiling.
+CHOICE: Head over to the trees you both saw earlier|trees_forest_area
+CHOICE: Return to camp to resupply and replan your journey|rad_zone_replan 
 
 #ID: rad_zone_replan
-TEXT: Back at the camp, you and the priest spend several days recuperating as your wounds begin to heal. You gather more food and water, meticulously inspect and repair your weapons and gear, and consult with experienced comrades about the best strategies for facing the dangers of the radiation zone. With everything in order and your resolve renewed, you set off once more toward the mysterious forest clearing.
-CHOICE: Set off immediately on your renewed journey|forest_clearing
+TEXT: Back at the camp, you and the priest spend several days recuperating. You gather more food and water, hoping to return to the vagrant. With everything in order and your resolve renewed, you set off once more toward the mysterious forest clearing.
+CHOICE: Set off immediately on your renewed journey|trees_forest_area 
 
 #ID: rad_zone_cautious
-TEXT: Unable to bear the sight of the vagrant’s suffering, a conflict of sympathy and self-preservation overwhelms you. In the end, fear wins over compassion, and you decide to leave him behind. The priest, though his expression reveals mixed emotions, says little as he follows you.
-As you proceed, the environment worsens—the radiation intensifies, the ground buckles with cracks and collapses, and the intertwining paths of slime and flickering flame form nearly impassable barriers. Lost among these obstacles, you inadvertently wander into the very heart of the radiation zone. Your protective gear fails, and your body begins a severe reaction. After a strenuous struggle, you manage to escape the core zone, but at a tremendous cost: your body grows weak, your equipment is badly damaged, and you suffer significant radiation injuries.
-Back at the camp, the priest’s attitude toward you changes completely. No longer does he trust or support you; his eyes now brim with disappointment and distancing, and he begins to undertake tasks alone to avoid any contact with you. You try to explain yourself, but his response is cold—his once-warm voice reduced to indifferent tones. Although you remain together physically, the bond you once shared has all but vanished. Overwhelmed by loneliness and regret, you silently vow to grow stronger, hoping someday to atone for your mistakes, even as your relationship with the priest slowly disintegrates.
-CHOICE: Restart|start
+TEXT: Unable to bear the sight of the vagrant’s suffering, a conflict of sympathy and self-preservation overwhelms you. In the end, fear wins over compassion, and you decide to leave him behind. The priest, though his expression reveals mixed emotions, says little as he follows you. Back at the camp, the priest’s attitude toward you changes completely. He begins to do tasks alone and avoids any contact with you. You try to explain yourself, but his response is cold. Although together physically, the bond has vanished. Overwhelmed by loneliness and regret, you silently vow to grow stronger, even as your relationship with the priest slowly disintegrates.
+CHOICE: Restart|start 
 
-#ID: secrets_forest_clearing
-TEXT: Chapter 5: The Secret of the Mysterious Forest Clearing
-The mysterious forest clearing is located on the edge of the radiation zone, as if it were a forgotten world. Mutated plants tower in twisted, contorted shapes, their thick branches covered in wart-like protrusions that glimmer with fluorescence; their leaves are narrow and sharp like blades scraping in the wind, emitting a rustling sound. Dappled shadows dance on the ground, and a thin mist shrouds the area, adding an air of unknown dread.
-You and the priest explore the radiation zone at the forest’s edge, your nerves on edge as the bizarre surroundings heighten your alertness. Curiosity compels you to venture deeper into the forest. In the heart of the forest clearing, under the moonlight, an ancient altar appears—its surface inscribed with mysterious symbols and exuding an aura of antiquity. As you study the altar, a group of survivors emerges; they are clad in tattered clothes, armed, with patched-up legs, their eyes cautious yet filled with a longing for kinship. Through conversation, you learn about the disastrous history of Pripyat, intricately linked to the current state of the radiation zone.
+#ID: trees_forest_area
+TEXT: You both walk the opposite direction from before, following one another closely per usual. "I've heard about the reclaimed forest area, but I didn't think it was real" he recounts. "The dealer told me all about it during his first expedition. I wish I came along." Nearing the forest, you take note of the gorgeous yet haunting zone. It's as if it were a forgotten world. Mutated plants with thick branches full of warts, sharp leaves seemingly resembling blades, emitting a sound unparallel to anything. A thin mist shrouds the area, the zone is oddly humid. In the heart of the forest clearing is a lake. The water appears clean and bright, the sun shining on the ripples despite there being no sun around when you both walked in initially. As you walk through the forest, you both encounter a small group of survivors. Their clothes are tattered, legs are patched-up, and eyes are filled with dread.
+CHOICE: Talk to them|survivor_conversation
+CHOICE: Remain cautious, fearing that resources might be stolen, and refuse to communicate|forest_cautious  
+
+#ID: survivor_conversation
+TEXT: "You must've came with the dealer I presume." The priest initiates. "Yes, our group split up and the second half went to the smoke stacks." One of the survivors responds. "Do you seem to have anything we could use?" The other survivors look at you both with wide eyes.
 CHOICE: Share supplies and seek deeper cooperation|forest_friendly
-CHOICE: Sincerely inquire about Pripyat’s past|forest_friendly
-CHOICE: Remain cautious, fearing that resources might be stolen, and refuse to communicate|forest_cautious
-CHOICE: They are not one of us, hardly trustworthy—plan to leave immediately|forest_cautious
+CHOICE: Inquire about why and how they're here|forest_friendly
+CHOICE: They are not one of us, hardly trustworthy—plan to leave immediately|forest_cautious 
 
 #ID: forest_friendly
-TEXT: You quickly open your backpack and display the precious supplies that you and the priest have painstakingly accumulated—food and medical items—to the survivors. In the radiation zone, such supplies are exceedingly valuable. With firm yet gentle care, you distribute the goods, winning the survivors’ trust and gratitude. An elderly survivor, visibly moved, says, “It’s been a long time since we’ve seen someone so kind.” The atmosphere eases, and soon everyone begins to engage in warm conversation with you.
-Your curiosity about Pripyat’s secrets grows. Through in-depth dialogue with the survivors, you come to realize that they might hold the key clues to unraveling the mysteries of the radiation zone. Humbly and sincerely, you ask them, “Could you tell us more about what happened in Pripyat? We are desperate to understand how all of this unfolded.” Touched by your sincere demeanor, the survivors begin recounting tales of a green-haired girl in the forest and the enigmatic experiments in Pripyat.
-As you listen, you frequently exchange glances with the priest, sharing thoughts and doubts. When a survivor hints that the experiments might be linked to the radiation outbreak, both you and the priest are taken aback; the priest nods in agreement, suggesting that even deeper secrets might lie behind it all. Together, you analyze the information, striving to piece together the truth and uncover clues to improve the situation. In doing so, you discover that your ways of thinking and values resonate profoundly with one another—the shared pursuit of truth and survival binding your hearts tightly.
-CHOICE: Without hesitation, return to the camp immediately|camp_crisis
-CHOICE: After a brief preparation, grab essential supplies then return to camp|forest_return_supplies
-
-#ID: forest_return_supplies
-TEXT: Realizing the urgency of the situation—but knowing from years of experience that reckless action can lead to further peril—you swiftly retrieve essential items from your backpack: a sharp dagger, several bottles of clean water, some first-aid supplies, and a small radiation shield mask. You secure these items tightly to your body, ensuring they won’t fall off in the rush.
-“Come on, time waits for no one!” your companion urges with a note of anxiety. You nod, take a deep breath, fasten your backpack, and sprint toward the camp alongside him. Though your heart is filled with worry, you know that only by being well-prepared can you protect yourself and others in a crisis.
+TEXT: You quickly open your backpack and distribute the goods, winning the survivors’ trust and gratitude. An elderly survivor, visibly moved, says, “It’s been a long time since we’ve seen someone so kind.” The tense atmosphere eases, and soon everyone begins to engage in warm conversation with you. Your curiosity about Pripyat’s secrets grows. Through in-depth dialogue with the survivors, you come to realize that they might hold the key clues to unraveling the mysteries of the radiation zone. You ask them, “Could you tell us more about what happened in Pripyat? We are desperate to understand how all of this unfolded.” The survivors lead you to an area in the forest which they claim is safer. They recount tales of a green-haired girl in the forest and the crazy experiments in Pripyat. As you listen, you frequently exchange glances with the priest, sharing thoughts and doubts. When a survivor hints that the experiments might be linked to the radiation outbreak, both you and the priest are taken aback.
+CHOICE: Without hesitation, return to the camp immediately|adventure_done 
 
 #ID: forest_cautious
-TEXT: Gazing at the group of survivors who have suddenly appeared like phantoms, a warning bell rings in your heart—caution surges like an overwhelming tide. In this barren, radiation-soaked wasteland where every single supply is a beacon of hope for you and the priest’s survival, you know that one extra person means additional consumption—especially when they are strangers. Thus, when the survivors, with seemingly friendly smiles, signal their desire to communicate, you decide without hesitation to refuse.
-The priest’s eyes brim with bewilderment; he tries to seize your arm and gently suggests, “Maybe they could offer us some useful information—let’s hear them out?” But you remain resolute, forcefully shaking off his hand and retorting, “People who appear out of nowhere are too bizarre—no nonsense, let’s go!” With that, you grip the priest’s arm tightly and drag him away. Although he staggers behind, continuously trying to persuade you to reconsider, your ears seem plugged, and his words fail to reach you.
-After leaving, you continue exploring the edge of the radiation zone but fail to uncover any more valuable information. The priest, while not overtly blaming you, shows disappointment in his eyes. The disagreement creates a rift between you—once-unbreakable trust and rapport now show signs of strain. In your struggle for survival, each attempt to make amends with the priest only reveals a growing distance between you; the once-strong bond gradually deteriorates. The priest begins to doubt your judgment, and you are filled with regret over your stubbornness. The steadfast camaraderie that once saw you through hardships slowly fades, leaving you as the most familiar strangers to one another, each burdened with complex emotions, wandering alone in a harsh world.
-CHOICE: Restart|start
+TEXT: Gazing at the group of survivors who have suddenly appeared like ghosts, a warning bell rings in your head. In this game of survival, you know that one extra person means additional wasted resources. You decide without hesitation to refuse. The priest’s eyes brim with bewilderment; he tries to seize your arm and gently suggests, “let’s hear them out?” But you remain resolute, holding onto the priest’s arm tightly and dragging him away. Back at the camp, the priest’s attitude toward you changes completely. He begins to do tasks alone and avoids any contact with you. You try to explain yourself, but his response is cold. Although together physically, the bond has vanished. Overwhelmed by loneliness and regret, you silently vow to grow stronger, even as your relationship with the priest slowly disintegrates.
+CHOICE: Restart|start 
 
-#ID: camp_crisis
-TEXT: Chapter 6: Camp Crisis and Choices
-The once tranquil camp is suddenly cloaked in terror. The sun’s warmth is hidden by thick smoke, and the world falls into dim darkness. The air is heavy with the scent of gunpowder and blood, suffocating in its intensity...
-CHOICE: Stand firm and defend the camp|camp_heroic_defense
-CHOICE: Grab a weapon and plunge directly into battle|camp_heroic_defense
-CHOICE: Tremble in fear and urge the priest to leave together|camp_cowardly_escape
-CHOICE: With a panicked look, urge the priest to leave together|camp_cowardly_escape
-
-#ID: camp_heroic_defense
-TEXT: You firmly look at the priest and nod in agreement: “Alright, we’ll defend this camp together—it’s our home!” A look of warmth and admiration flashes in the priest’s eyes...
-CHOICE: Restart|start
-
-#ID: camp_cowardly_escape
-TEXT: You gaze at the chaotic scene before you, your heart overtaken by fear, and your legs begin to tremble uncontrollably...
-CHOICE: Restart|start
+#ID: adventure_done
+TEXT: Although dreadfully exhausted, you both feel a sense of trust and comradery in one another. You rest in the makeshift bed and he sits beside you. "Thank you for coming with me to the radiation zone today." He coughs. "I've only been twice, and the second time was to save you." "Yeah.. I felt like I needed to go." You say, starting to fall asleep. He kisses your forehead. "I was able to see some old faces, it felt good to reconnect even though I know I'll never see them for a while." You drift off into a deep sleep, content and happy knowing that the priest is by your side.
+CHOICE: Restart|start  

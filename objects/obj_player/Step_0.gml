@@ -45,6 +45,8 @@ for (var i = 0; i < array_length(scene_objects); i++) {
             // Optional: draw prompt or effect here
 
             if (keyboard_check_pressed(vk_space) && variable_instance_exists(id, "scene_to_load")) {
+				global.return_x = obj_player.x;
+				global.return_y = obj_player.y;
                 room_goto(scene_to_load);
             }
         }
