@@ -1,6 +1,76 @@
 #ID: start
-TEXT: PLACEHOLDER
-CHOICE: PLACEHOLDER |honest
-CHOICE: PLACEHOLDER |honest
-CHOICE: PLACEHOLDER |curious
-CHOICE: PLACEHOLDER |curious
+TEXT: You slowly step into the eerie clearing of the forest. Everything around you feels unnaturally silent. The trees are twisted in shape, almost as if they shift slightly when you’re not looking. Their bark emits a faint glow, casting an otherworldly shimmer in the shadows. The ground is covered in unknown moss, some of which faintly glows in the darkness, like fireflies flickering in the night. The wind whistles through the branches, carrying a deep, low hum. There are no birds, no insects—only distant, flickering lights that jump across the trees, like wandering spirits drifting through the air. As you move forward, a faint sound stirs in the air. You stop. Your gaze falls upon a fallen, withered tree up ahead. A figure stands beside it. She has long, green hair, blending seamlessly with the glowing hues of the forest. Small horns protrude from her head, and her pointed ears make it clear—she is not human. She remains still, watching you intently. Her fingers rest lightly on the hilt of a knife in her hand. Her lips curl into a faint smile, one that you cannot quite decipher.
+CHOICE: Slowly approach her|ApproachHer
+CHOICE: Greet her|TalkToHer
+CHOICE: Turn back and leave|LeaveForest
+
+#ID: ApproachHer
+TEXT: You tread lightly, carefully stepping toward her. She remains still, unmoving, as if waiting for something. Her long green hair sways faintly under the dim glow, and her fingers still rest on the hilt of her knife—but she makes no sudden movements. With each step, the air grows heavier. Just as you close half the distance between you, her ears twitch slightly. Her gaze locks onto you. In an instant, her hand flashes to her knife, drawing it in a swift, instinctive motion. "You’re all the same..." Her voice is soft, but laced with coldness. There is no anger in her eyes—only deep wariness and exhaustion. "Always approaching... only to hurt me later." She does not hesitate. The blade slices through the air, aimed directly at your throat. Darkness consumes your consciousness.
+CHOICE: Restart|Restart Game
+
+#ID: TalkToHer
+TEXT: You hesitate for a moment, choosing not to move any closer. Instead, you stand where you are and speak softly: "I mean no harm." The girl remains still, her fingers resting lightly on the hilt of her knife. She neither steps back nor draws her weapon, but her gaze stays locked onto you, as if trying to determine whether your words are true. You try to steady your voice. "Who are you?" She is silent for a few seconds before tilting her head slightly, as if in thought. "Why are you here?" Her voice is soft, like wind brushing through dry leaves. She has finally spoken, but her tone carries no emotion—only caution and distance.
+CHOICE: "I’m just passing through. I mean no harm."|ExplainYourself
+CHOICE: "I want to know who you are."|PressForAnswers
+
+#ID: LeaveForest
+TEXT: You stare at the girl. Her hand rests lightly on the hilt of her knife. Though she has yet to draw it, her stance makes it clear—she is ready to attack at any moment. Your body tenses instinctively, a creeping sense of unease rising in your chest. Her gaze is cold, devoid of any emotion. She stands motionless, as if waiting for you to decide what to do next. You take a step back, trying to steady yourself. Something about this place feels wrong. Her hair is green. An unnatural green, blending seamlessly with the eerie glow of the forest. You’ve never seen a color like this before. It doesn’t look like ordinary dyed hair—it feels like something... inhuman. What exactly is she? The wind rustles through the treetops, carrying a low, hollow whisper. You clench your fists, realizing now is not the time to approach her. She is too dangerous, and you know nothing about her. Taking a deep breath, you slowly retreat, turning toward the path you came from. The forest remains eerily silent, but you can feel it—her gaze lingers on your back. You leave, but her image stays in your mind. Perhaps... you should return and uncover the truth.
+CHOICE: Leave|End Interaction
+
+#ID: ExplainYourself
+TEXT: "I’m just passing through. I mean no harm." You keep your tone as relaxed as possible, hoping to convince her that you are not a threat. She doesn’t respond immediately. Instead, she simply watches you, her gaze still guarded, though her fingers shift slightly away from the hilt of her knife. "Passing through?" She repeats the words softly, as if tasting their meaning. The wind moves through the trees, carrying a deep, low hum. She glances down at the knife in her hand, silent for a moment, before slowly lifting her head again. "This place doesn’t welcome outsiders." Her voice remains cold and distant, but at least she hasn’t drawn her weapon.
+CHOICE: “I understand. I won’t stay long. I’ll leave now.”|LeaveForest
+CHOICE: “I’m just curious about this place… and about you.”|PressForAnswers
+CHOICE: “…But I’ve never seen anyone like you before. Your green hair and pointed ears… you remind me of an elf.”|ComplimentHer
+
+#ID: PressForAnswers
+TEXT: "I’m just curious about this place… and about you." You ask cautiously, trying to get more information from her. Her expression shifts slightly—just for a moment, her cold gaze flickers with something almost imperceptible. Her fingers tighten around the knife hilt, her body tensing. "...Why?" Her voice is soft, almost like a whisper carried by the wind, but you can hear the unease in it. Her eyes scan over you for a brief second, as if trying to judge your intentions. The wind moves through the trees, making her hair sway, its green hue blending into the strange forest around her. "Why are you all like this?" Her voice suddenly rises, sharp like a blade slicing through the silence. "Asking questions… curious… wanting to know who I am?" Her lips twitch, as if forcing a smile, but her eyes grow colder. "And then what?" Her voice drops into a low murmur, carrying a restrained pain. "Once you know… you get to decide what to do with me?" A hollow laugh escapes her lips—one without warmth. "I’ve seen people like you before." Her jaw tightens, and her voice trembles slightly. "They asked… they wanted to know… and then—" She suddenly inhales sharply, as if trying to push something down, but the pain and resentment have already consumed her. "And then they burned me, cut me, drove me away—treated me like a monster!" Her grip on the knife tightens. The blade glints under the faint light, and her expression twists into something unreadable. "You’re all the same!" She lunges at you! You barely have time to react before the sharp blade slices through the air—swift, merciless, unstoppable.
+CHOICE: Restart|Restart Game
+
+#ID: ComplimentHer
+TEXT: "...But I’ve never seen anyone like you before." You pause for a moment, your gaze settling on her hair and ears. "Your green hair and pointed ears... they’re beautiful. You remind me of an elf." Her body stiffens. The hand gripping her knife trembles slightly for just a moment. She freezes, as if unable to believe what she just heard. "...What did you say?" Her voice is soft, uncertain, as if testing the words, as if doubting her own ears. The wind rustles through the trees, making her long hair sway gently. Under the dim glow, its green hue shimmers faintly. She lowers her gaze, staring at her slightly trembling fingertips before looking back at you, her expression unreadable. "Beautiful?" She repeats the word under her breath, her lips parting slightly, as if unsure how to respond. She doesn’t refute you, nor does she reach for her knife. She simply stands there, her brows slightly furrowed, hesitation and confusion flickering in her eyes.
+CHOICE: “No. You are.”|ComplimentHer2
+CHOICE: “I didn’t mean to offend you.”|ApologizeForCompliment
+
+#ID: ComplimentHer2
+TEXT: “No. You are.” You speak with a quiet certainty, your voice firm. She blinks, caught off guard, as if she hadn’t expected you to say that. The wind stirs through the trees, making her long hair sway gently. Her fingers unconsciously rub against the hilt of her knife, as if she’s caught between thought and hesitation. "You think I’m beautiful?" Her voice is soft, almost a whisper, and her gaze flickers to the knife in her hand. She lowers her eyes for a moment before looking back at you. "I... don’t believe you." Her voice holds no bitterness—only disbelief. “But... thank you.” Her voice is quieter now, like a whisper carried by the wind. “I’ve never been called beautiful before.”
+CHOICE: “I still think you’re beautiful.”|ReassureHer
+CHOICE: “I understand why you’d be hesitant to believe that.”|SympathizeWithHer
+
+#ID: ApologizeForCompliment
+TEXT: “I didn’t mean to offend you.” You quickly apologize, realizing that your words might not have been the right approach. Her expression shifts slightly, but she doesn’t draw her weapon. Instead, she tilts her head, studying you. “Offend me?” She asks softly. “No... you didn’t offend me.” There’s a slight pause before she continues, “But why... why would you say that?” Her voice is guarded, but there’s a trace of curiosity in it. "I’m not... what you think I am." Her hand grips the knife tighter, her fingers slightly trembling.
+CHOICE: “I think you're more than what you show to the world.”|PressFurther
+CHOICE: “I’m sorry. I just thought...”|TryAgain
+
+#ID: ReassureHer
+TEXT: “I still think you’re beautiful.” You say with sincerity, your voice unwavering. She pauses, her eyes flickering with something indecipherable. The wind moves through the trees, causing her long hair to sway gently. She doesn’t respond immediately, and the air between you both feels charged with unspoken words. Finally, she lowers her gaze, staring at her knife. After a long moment, she looks up at you, her eyes softening just a little. "No one’s ever said that to me before," she whispers. "No one’s ever looked at me like you are now." Her fingers loosen slightly around the hilt of the knife. "Thank you." Her voice is soft, a quiet echo of something she hadn’t allowed herself to feel in years.
+CHOICE: “You’re welcome. You deserve to hear it.”|AcceptHer
+CHOICE: “I’m just being honest.”|StayTrue
+
+#ID: StayTrue
+TEXT: “I’m just being honest.” You say gently, meeting her gaze. She tilts her head slightly, studying you with an expression you can’t quite read. “Honest?” She repeats the word slowly, her voice soft. The wind stirs her green hair, and for a moment, she looks far away—distant. “I suppose honesty is something I’ve forgotten,” she says softly. She stares at her knife, then slowly lowers it, her fingers trembling. "You don’t know what it’s like... to be looked at as a monster." Her voice is filled with quiet pain, a lingering sadness that has been with her for far too long.
+CHOICE: “You’re not a monster. You’re just different.”|ReassureHer2
+CHOICE: “I understand why you feel that way. I do.”|SympathizeWithHer2
+
+#ID: ReassureHer2
+TEXT: “You’re not a monster. You’re just different.” You say with unwavering certainty. She freezes for a moment, her eyes widening slightly, and then she looks down at her hands. "Different..." She murmurs the word, her voice softer now, almost reverent. "I’ve always been different. But no one has ever said that to me before. No one has ever looked at me with kindness." She lowers her gaze, her breath steadying. "You don’t know how much it means to hear that." She looks up at you, her eyes filled with something she hasn’t shown in years—hope.
+CHOICE: “You can start fresh. I’ll help you.”|OfferHelp
+CHOICE: “I’ll stand by you, no matter what.”|StayByHer
+
+#ID: SympathizeWithHer2
+TEXT: “I understand why you feel that way. I do.” You say quietly, taking a step closer. She looks at you, her expression unreadable for a moment. “You understand?” She whispers. “How could you possibly understand?” Her gaze sharpens, and she grips her knife tighter. But then, she pauses, looking down at her hands again. Her fingers tremble, and she slowly relaxes her grip. "Maybe... maybe you do." Her voice is quiet now, almost fragile. "I’ve carried this pain alone for so long."
+CHOICE: “You don’t have to carry it alone anymore.”|OfferSupport
+CHOICE: “You can find peace. I’ll help you.”|OfferPeace
+
+#ID: OfferHelp
+TEXT: “You can start fresh. I’ll help you.” You offer softly, your words sincere. She gazes at you for a long moment, her expression unreadable. "Start fresh..." She repeats the words slowly, as if tasting their meaning. Then, a small smile tugs at the corners of her lips. It’s a fragile smile—unsure, tentative. "I’ve never been given that choice before," she says quietly. "No one has ever offered to help me." She looks up at you, her eyes softening. "Thank you. I don’t know what to say."  
+CHOICE: “You don’t need to say anything. I’m here for you.”|StayWithHer
+CHOICE: “Let’s leave this place together.”|LeaveTogether
+
+#ID: StayWithHer
+TEXT: “You don’t need to say anything. I’m here for you.” You say softly, your voice unwavering. She stares at you for a long moment, her eyes deep and searching. Then, she nods slowly, her expression softening. “I believe you,” she says quietly. "I think... I think I can trust you." She steps closer, and for the first time, there is no hesitation in her movements. She takes your hand, and you both stand together in the quiet forest, a strange sense of peace settling between you.  
+CHOICE: “Let’s go. Together.”|LeaveTogether
+
+#ID: LeaveTogether
+TEXT: “Let’s leave this place together.” You say with conviction. She smiles slightly, and the tension in her shoulders eases. "Together..." She whispers, as if the word itself is a dream she had long given up on. You both turn and walk away from the forest, leaving behind the dark memories and uncertainties. The night is cold, but you feel a warmth that was missing before. As you walk into the unknown, you know one thing for sure: she won’t be alone again.  
+CHOICE: End interaction|EndInteraction

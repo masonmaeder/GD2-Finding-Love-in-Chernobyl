@@ -1,4 +1,4 @@
-#ID: ooze_intro
+#ID: start
 TEXT: Chapter 1: The Faint Light of the Rusted Riverbed
 The ground of the rusted riverbed is covered with dark red oxide crystals. Every scrap of metal appears like the chewed bones of a giant beast. In the center of the riverbed, dozens of human skeletons lie piled up—their protective suits long decayed, revealing charred skin embedded with fluorescent blue moss. In the distance, several wrecks of mechanical crocodiles float; their metallic scales shimmer with a ghostly green luster amidst radioactive dust, and jagged, blade-like bone spurs along their spines still bear dried fragments of flesh and blood. Just when you find yourself on the verge of being torn apart by a mutated crocodile pack… Ooze appears and envelops you with its liquid body. After digesting the crocodiles’ metallic teeth, its volume suddenly expands.
 CHOICE: Walk slowly forward and softly ask, “What are you?”|ooze_comm

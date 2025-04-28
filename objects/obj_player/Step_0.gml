@@ -37,21 +37,30 @@ var scene_objects = [obj_preacher_pixel, obj_dryad_pixel];
 // Loop through each type of scene object
 for (var i = 0; i < array_length(scene_objects); i++) {
 */
-    var obj = obj_interactable;
+    
+var obj = obj_interactable;
+with (obj) {
+    if (point_distance(other.x, other.y, x, y) < interact_range) {
 
-    // Check proximity to ANY instance of the object
-    with (obj) {
-        if (point_distance(other.x, other.y, x, y) < interact_range) {
-            // Optional: draw prompt or effect here
-
-            if (keyboard_check_pressed(vk_space) && variable_instance_exists(id, "scene_to_load")) {
-				global.return_x = obj_player.x;
-				global.return_y = obj_player.y;
-                room_goto(scene_to_load);
+        if (keyboard_check_pressed(vk_space) && variable_instance_exists(id, "scene_to_load")) {
+            
+            global.return_x = obj_player.x;
+            global.return_y = obj_player.y;
+            global.return_room = rm_game;
+            
+            if (variable_instance_exists(id, "dialogue_file")) {
+                global.dialogue_file = dialogue_file;
             }
+            if (variable_instance_exists(id, "character_sprite")) {
+                global.character_sprite = character_sprite;
+            }
+			if (variable_instance_exists(id, "portrait_offset")) {
+			    global.portrait_offset = portrait_offset;
+			}
+            room_goto(scene_to_load);
         }
     }
-
+}
 
 
 
