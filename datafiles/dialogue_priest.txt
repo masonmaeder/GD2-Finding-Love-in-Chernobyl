@@ -24,37 +24,37 @@ TEXT: With a trembling voice, you ask, “Where is this place? Why did I come he
 CHOICE: Explore|injured 
 
 #ID: injured
-Walking into the gated area, you realize the priest might've been right. If you weren't so impulsive. The air is oddly thick and the fumes cause some dizziness. However, you continue walking through the fog.
+TEXT: into the gated area, you realize the priest might've been right. If you weren't so impulsive. The air is oddly thick and the fumes cause some dizziness. However, you continue walking through the fog.
 CHOICE: Explore the emitting smoke.|smokearea
 CHOICE: Explore the trees you see in the distance.|forestarea 
 
 #ID: smokearea
-While you don't know which direction you're in, the smoke in the distance looks interesting. The smoke is green instead of the usual grey smoke you're accustomed to. "Are those smokestacks?" You ask yourself.
+TEXT: While you don't know which direction you're in, the smoke in the distance looks interesting. The smoke is green instead of the usual grey smoke you're accustomed to. "Are those smokestacks?" You ask yourself.
 CHOICE: Continue exploring.|faintedlol 
 
 #ID: forestarea
-While you don't know which direction you're in, the trees in the distance look interesting. "Why would there be trees in a radiated area?" You ask yourself.
+TEXT: While you don't know which direction you're in, the trees in the distance look interesting. "Why would there be trees in a radiated area?" You ask yourself.
 CHOICE: Continue exploring.|faintedlol 
 
 #ID: faintedlol
-Perhaps the air is getting to you. Unbeknownst to you, you faint.
+TEXT: Perhaps the air is getting to you. Unbeknownst to you, you faint.
 CHOICE: Try to wake up.|wakeup 
 
 #ID: wakeup
-You wake up, hearing a the priests voice, “You were too impulsive, not listening to my warning.” As you lie on a makeshift bed watching him, a deep guilt overwhelms you: “I’m sorry—I was too impulsive.” "It's fine. I followed you to make sure everything was alright. I saw you drop," he chuckles a bit, "and carried you back here."
+TEXT: You wake up, hearing a the priests voice, “You were too impulsive, not listening to my warning.” As you lie on a makeshift bed watching him, a deep guilt overwhelms you: “I’m sorry—I was too impulsive.” "It's fine. I followed you to make sure everything was alright. I saw you drop," he chuckles a bit, "and carried you back here."
 CHOICE: Facepalm.|embarrassed 
 
 #ID: embarrassed
-You slap your forehead in embarrassment. "I'm sorry..." your vision starts to come back. The realization dawns upon you, you're in his tent. "It's certainly alright." He rests a wet cloth on your forehead. "Now get some more rest, that radiation is deadly without these." He holds up a gas mask. "I should've gave you one but I wanted you to see how deadly it was out there."
+TEXT: You slap your forehead in embarrassment. "I'm sorry..." your vision starts to come back. The realization dawns upon you, you're in his tent. "It's certainly alright." He rests a wet cloth on your forehead. "Now get some more rest, that radiation is deadly without these." He holds up a gas mask. "I should've gave you one but I wanted you to see how deadly it was out there."
 CHOICE: You're kind of mad, you could've explored more.|gasmaskannoyed
 CHOICE: You're happy, at least someone has your back.|thankfulforpriest 
 
 #ID: gasmaskannoyed
-"You're telling me I could've explored more??" you question. "I mean-yes? But otherwise, you might've encountered some dangerous people out there." "What do you mean by that?" you sit up quickly. He dashes to you, guiding you to lay back down. "I mean that not all of us are friendly. You might die if you say or do the wrong thing."
+TEXT: "You're telling me I could've explored more??" you question. "I mean-yes? But otherwise, you might've encountered some dangerous people out there." "What do you mean by that?" you sit up quickly. He dashes to you, guiding you to lay back down. "I mean that not all of us are friendly. You might die if you say or do the wrong thing."
 CHOICE: Continue.|thankfulforpriest 
 
 #ID: thankfulforpriest
-"Well, thank you for helping me." You smile and he smiles back at you. He leaves his tent, giving you time to rest.
+TEXT: "Well, thank you for helping me." You smile and he smiles back at you. He leaves his tent, giving you time to rest.
 CHOICE: Take some time to rest.|camp_life 
 
 #ID: camp_life
@@ -71,7 +71,7 @@ TEXT: When the priest offers you the bread, you feel hesitant. You force a small
 CHOICE: Go prepare|camp_scavenge 
 
 #ID: camp_scavenge
-During the scavenge, you and the priest search the dilapidated building close to the camp. The priest searches one of the rooms in the back while you walk down some steps to find a basement door.
+TEXT: During the scavenge, you and the priest search the dilapidated building close to the camp. The priest searches one of the rooms in the back while you walk down some steps to find a basement door.
 CHOICE: Step forward slowly and gently push open the basement door|camp_brave_exploration
 CHOICE: Grasp the doorknob, test it, and then push it open forcefully|camp_brave_exploration
 CHOICE: Grab the priest and suggest we do not go in|camp_cautious_action
