@@ -36,6 +36,7 @@
     {"name":"inst_4BBFDAEA","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_5CA43801","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_25E054BD","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_60CF1475","path":"rooms/rm_game/rm_game.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -125,6 +126,7 @@
         {"$GMRInstance":"v2","%Name":"inst_C06132D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_C06132D","objectId":{"name":"obj_tree","path":"objects/obj_tree/obj_tree.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":832.0,"y":672.0,},
         {"$GMRInstance":"v2","%Name":"inst_5CA43801","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5CA43801","objectId":{"name":"obj_invis","path":"objects/obj_invis/obj_invis.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":4.5,"scaleY":5.0,"x":0.0,"y":352.0,},
         {"$GMRInstance":"v2","%Name":"inst_25E054BD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_25E054BD","objectId":{"name":"obj_depth","path":"objects/obj_depth/obj_depth.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1312.0,"y":0.0,},
+        {"$GMRInstance":"v2","%Name":"inst_60CF1475","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_60CF1475","objectId":{"name":"obj_doctor_pixel","path":"objects/obj_doctor_pixel/obj_doctor_pixel.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":512.0,},
       ],"layers":[],"name":"Entities","properties":[
         {"name":"g_TintCol","type":1,"value":"#FF99CDFF",},
       ],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},

@@ -3,10 +3,12 @@ var space_pressed = keyboard_check_pressed(vk_space);
 
 if (is_typing) {
     if (space_pressed) {
+		audio_play_sound(snd_boop, 1, false); 
         typewriter_index = string_length(typewriter_text);
         is_typing = false;
     } else if (typewriter_index < string_length(typewriter_text)) {
         typewriter_index += 1;
+		audio_play_sound(snd_boop2, 0, false);
     }
 }
 else {
@@ -21,22 +23,42 @@ else {
         var total_choices = count + 1; // +1 because of "Leave" option
 
         if (keyboard_check_pressed(vk_down)) {
-            selected_choice = (selected_choice + 1) mod total_choices;
-        }
-        if (keyboard_check_pressed(vk_up)) {
-            selected_choice = (selected_choice - 1 + total_choices) mod total_choices;
-        }
+			selected_choice = (selected_choice + 1) mod total_choices;
+			audio_play_sound(snd_boop, 1, false); // Play boop when moving down
+		}
+		if (keyboard_check_pressed(vk_up)) {
+			selected_choice = (selected_choice - 1 + total_choices) mod total_choices;
+			audio_play_sound(snd_boop, 1, false); // Play boop when moving up
+		}
 
-        if (space_pressed) {
-            if (selected_choice == count) {
-                // Save before leaving
-                global.dialogue_progress[? global.dialogue_file] = current_node;
-                room_goto(global.return_room); // Fixed: use the stored return room
+
+  if (space_pressed) {
+    if (selected_choice == count) {
+        // Leave button clicked
+		 audio_play_sound(snd_boop, 1, false); 
+        global.dialogue_progress[? global.dialogue_file] = current_node;
+        room_goto(rm_game);
+    } else {
+        var next_node = node.choices[selected_choice][1];
+
+        if (is_string(next_node)) {
+            var lower_node = string_lower(next_node);
+
+            if (lower_node == "leave") {
+                global.dialogue_progress[? global.dialogue_file] = "leave";
+                room_goto(rm_game);
+            } else if (lower_node == "endgame") {
+                room_goto(rm_endgame);
+            } else if (lower_node == "gameover") {
+                room_goto(rm_gameover);
             } else {
-                var next_node = node.choices[selected_choice][1];
                 scr_load_node(next_node);
             }
         }
+    }
+}
+
+
     }
 }
 

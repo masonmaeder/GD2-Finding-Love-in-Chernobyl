@@ -1,0 +1,16 @@
+#ID: start
+TEXT: You approach a raggedy looking man, he seems to not be all together.
+"fjhgjhgfajhgfdjsfgdsfa"
+CHOICE: What was that?|huh
+
+#ID: huh
+TEXT: "fjhgjhgfajhgfdjsfgdsfsadsadsadgvdbvgrfergvbna"
+CHOICE: Okay....|ok
+
+#ID: ok
+TEXT: ...
+CHOICE: Leave|leave
+
+#ID: leave
+TEXT: ...
+CHOICE: Leave|leave

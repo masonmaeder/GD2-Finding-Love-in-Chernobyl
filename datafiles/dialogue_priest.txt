@@ -1,4 +1,3 @@
-
 #ID: start
 TEXT: You trudge through a cold night, disoriented by radioactive fog and ruins. Fading fast, you glimpse a distant bonfire—a fragile beacon of hope against the dark. The camp shelters survivors huddled around the fire. Among them, one figure draws your attention: a priest in a tattered black robe. You notice a serene smile coming from his pale face. “Hey, you seem lost.” He takes his robe off and rests it on you. At that moment, your heart swells with mixed emotions, and you are faced with a choice:
 CHOICE: Step forward slowly and honestly confess your memory loss.|honest
@@ -24,30 +23,38 @@ CHOICE: Continue.|camp_life
 TEXT: With a trembling voice, you ask, “Where is this place? Why did I come here?” His eyes fill with sorrow. He replies, “This is Pripyat—once a thriving city, now destroyed. Perhaps fate brought you here.” He draws you to sit by the bonfire, the fire warming your hands and faces. “I want to explore, to see if I can find more information about this place,” you say. The priest frowns, concern flashing in his eyes, “This place is very dangerous; radiation is everywhere. It would be too dangerous to venture out on your own.” You insist, sounding more determined, “I should try at least!” He sighs, “Fine, but promise me you will be careful.” You nod, your heart filled with gratitude knowing at least one person as your back.
 CHOICE: Explore|injured 
 
-#ID: injured Walking into the gated area, you realize the priest might've been right. If you weren't so impulsive. The air is oddly thick and the fumes cause some dizziness. However, you continue walking through the fog.
+#ID: injured
+Walking into the gated area, you realize the priest might've been right. If you weren't so impulsive. The air is oddly thick and the fumes cause some dizziness. However, you continue walking through the fog.
 CHOICE: Explore the emitting smoke.|smokearea
 CHOICE: Explore the trees you see in the distance.|forestarea 
 
-#ID: smokearea While you don't know which direction you're in, the smoke in the distance looks interesting. The smoke is green instead of the usual grey smoke you're accustomed to. "Are those smokestacks?" You ask yourself.
+#ID: smokearea
+While you don't know which direction you're in, the smoke in the distance looks interesting. The smoke is green instead of the usual grey smoke you're accustomed to. "Are those smokestacks?" You ask yourself.
 CHOICE: Continue exploring.|faintedlol 
 
-#ID: forestarea While you don't know which direction you're in, the trees in the distance look interesting. "Why would there be trees in a radiated area?" You ask yourself.
+#ID: forestarea
+While you don't know which direction you're in, the trees in the distance look interesting. "Why would there be trees in a radiated area?" You ask yourself.
 CHOICE: Continue exploring.|faintedlol 
 
-#ID: faintedlol Perhaps the air is getting to you. Unbeknownst to you, you faint.
+#ID: faintedlol
+Perhaps the air is getting to you. Unbeknownst to you, you faint.
 CHOICE: Try to wake up.|wakeup 
 
-#ID: wakeup You wake up, hearing a the priests voice, “You were too impulsive, not listening to my warning.” As you lie on a makeshift bed watching him, a deep guilt overwhelms you: “I’m sorry—I was too impulsive.” "It's fine. I followed you to make sure everything was alright. I saw you drop," he chuckles a bit, "and carried you back here."
+#ID: wakeup
+You wake up, hearing a the priests voice, “You were too impulsive, not listening to my warning.” As you lie on a makeshift bed watching him, a deep guilt overwhelms you: “I’m sorry—I was too impulsive.” "It's fine. I followed you to make sure everything was alright. I saw you drop," he chuckles a bit, "and carried you back here."
 CHOICE: Facepalm.|embarrassed 
 
-#ID: embarrassed You slap your forehead in embarrassment. "I'm sorry..." your vision starts to come back. The realization dawns upon you, you're in his tent. "It's certainly alright." He rests a wet cloth on your forehead. "Now get some more rest, that radiation is deadly without these." He holds up a gas mask. "I should've gave you one but I wanted you to see how deadly it was out there."
+#ID: embarrassed
+You slap your forehead in embarrassment. "I'm sorry..." your vision starts to come back. The realization dawns upon you, you're in his tent. "It's certainly alright." He rests a wet cloth on your forehead. "Now get some more rest, that radiation is deadly without these." He holds up a gas mask. "I should've gave you one but I wanted you to see how deadly it was out there."
 CHOICE: You're kind of mad, you could've explored more.|gasmaskannoyed
 CHOICE: You're happy, at least someone has your back.|thankfulforpriest 
 
-#ID: gasmaskannoyed "You're telling me I could've explored more??" you question. "I mean-yes? But otherwise, you might've encountered some dangerous people out there." "What do you mean by that?" you sit up quickly. He dashes to you, guiding you to lay back down. "I mean that not all of us are friendly. You might die if you say or do the wrong thing."
+#ID: gasmaskannoyed
+"You're telling me I could've explored more??" you question. "I mean-yes? But otherwise, you might've encountered some dangerous people out there." "What do you mean by that?" you sit up quickly. He dashes to you, guiding you to lay back down. "I mean that not all of us are friendly. You might die if you say or do the wrong thing."
 CHOICE: Continue.|thankfulforpriest 
 
-#ID: thankfulforpriest "Well, thank you for helping me." You smile and he smiles back at you. He leaves his tent, giving you time to rest.
+#ID: thankfulforpriest
+"Well, thank you for helping me." You smile and he smiles back at you. He leaves his tent, giving you time to rest.
 CHOICE: Take some time to rest.|camp_life 
 
 #ID: camp_life
@@ -63,7 +70,8 @@ CHOICE: Go prepare|camp_scavenge
 TEXT: When the priest offers you the bread, you feel hesitant. You force a small smile, knowing you're starving, and politely reply, “No, thank you. You eat it yourself—I’m not really hungry.” You turn your head away. The priest appears somewhat surprised, he thought you wanted a piece. "We should prepare to scavenge now." He says.
 CHOICE: Go prepare|camp_scavenge 
 
-#ID: camp_scavenge During the scavenge, you and the priest search the dilapidated building close to the camp. The priest searches one of the rooms in the back while you walk down some steps to find a basement door.
+#ID: camp_scavenge
+During the scavenge, you and the priest search the dilapidated building close to the camp. The priest searches one of the rooms in the back while you walk down some steps to find a basement door.
 CHOICE: Step forward slowly and gently push open the basement door|camp_brave_exploration
 CHOICE: Grasp the doorknob, test it, and then push it open forcefully|camp_brave_exploration
 CHOICE: Grab the priest and suggest we do not go in|camp_cautious_action
@@ -124,7 +132,8 @@ TEXT: With determined eyes, you and the priest decide to step in together. You b
 CHOICE: Go towards the smoke.|smoke_stacks_area
 CHOICE: Go towards the trees.|trees_forest_area 
 
-#ID: smoke_stacks_area You both trek towards the smoke, only to discover some smoke stacks. This was likely one of the exit points where the blast escaped from. The smoke stacks seem to be in-tact however. During your arduous journey, you discover a pitiful vagrant. Its clothes are torn and its skin has become leather-like. It lies weakly curled up in a corner, eyes filled terror and tears.
+#ID: smoke_stacks_area
+You both trek towards the smoke, only to discover some smoke stacks. This was likely one of the exit points where the blast escaped from. The smoke stacks seem to be in-tact however. During your arduous journey, you discover a pitiful vagrant. Its clothes are torn and its skin has become leather-like. It lies weakly curled up in a corner, eyes filled terror and tears.
 CHOICE: Help the vagrant, lift them up and offer food and water|rad_zone_kind
 CHOICE: Search nearby for medical supplies and then return to assist the vagrant|rad_zone_kind
 CHOICE: Survey the surroundings and choose to avoid them, continuing onward|rad_zone_cautious
@@ -141,7 +150,7 @@ CHOICE: Set off immediately on your renewed journey|trees_forest_area
 
 #ID: rad_zone_cautious
 TEXT: Unable to bear the sight of the vagrant’s suffering, a conflict of sympathy and self-preservation overwhelms you. In the end, fear wins over compassion, and you decide to leave him behind. The priest, though his expression reveals mixed emotions, says little as he follows you. Back at the camp, the priest’s attitude toward you changes completely. He begins to do tasks alone and avoids any contact with you. You try to explain yourself, but his response is cold. Although together physically, the bond has vanished. Overwhelmed by loneliness and regret, you silently vow to grow stronger, even as your relationship with the priest slowly disintegrates.
-CHOICE: Restart|start 
+CHOICE: Leave|leave 
 
 #ID: trees_forest_area
 TEXT: You both walk the opposite direction from before, following one another closely per usual. "I've heard about the reclaimed forest area, but I didn't think it was real" he recounts. "The dealer told me all about it during his first expedition. I wish I came along." Nearing the forest, you take note of the gorgeous yet haunting zone. It's as if it were a forgotten world. Mutated plants with thick branches full of warts, sharp leaves seemingly resembling blades, emitting a sound unparallel to anything. A thin mist shrouds the area, the zone is oddly humid. In the heart of the forest clearing is a lake. The water appears clean and bright, the sun shining on the ripples despite there being no sun around when you both walked in initially. As you walk through the forest, you both encounter a small group of survivors. Their clothes are tattered, legs are patched-up, and eyes are filled with dread.
@@ -160,8 +169,12 @@ CHOICE: Without hesitation, return to the camp immediately|adventure_done
 
 #ID: forest_cautious
 TEXT: Gazing at the group of survivors who have suddenly appeared like ghosts, a warning bell rings in your head. In this game of survival, you know that one extra person means additional wasted resources. You decide without hesitation to refuse. The priest’s eyes brim with bewilderment; he tries to seize your arm and gently suggests, “let’s hear them out?” But you remain resolute, holding onto the priest’s arm tightly and dragging him away. Back at the camp, the priest’s attitude toward you changes completely. He begins to do tasks alone and avoids any contact with you. You try to explain yourself, but his response is cold. Although together physically, the bond has vanished. Overwhelmed by loneliness and regret, you silently vow to grow stronger, even as your relationship with the priest slowly disintegrates.
-CHOICE: Restart|start 
+CHOICE: Leave|leave 
 
 #ID: adventure_done
 TEXT: Although dreadfully exhausted, you both feel a sense of trust and comradery in one another. You rest in the makeshift bed and he sits beside you. "Thank you for coming with me to the radiation zone today." He coughs. "I've only been twice, and the second time was to save you." "Yeah.. I felt like I needed to go." You say, starting to fall asleep. He kisses your forehead. "I was able to see some old faces, it felt good to reconnect even though I know I'll never see them for a while." You drift off into a deep sleep, content and happy knowing that the priest is by your side.
-CHOICE: Restart|start  
+CHOICE: ...|EndGame  
+
+#ID: leave
+TEXT: ...
+CHOICE: Leave|leave

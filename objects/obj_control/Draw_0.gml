@@ -1,16 +1,13 @@
 var node = dialogue_nodes[? current_node];
 
-// === Text Style ===
 draw_set_font(fnt_dialogue);
 draw_set_color(c_white);
 
-// === Portrait ===
 var char_x = global.portrait_offset[0];
 var char_y =  global.portrait_offset[1];
-show_debug_message(char_y);
-draw_sprite_ext(character_sprite, 0, char_x, char_y, size[0], size[0], 0, colour[0], 1);
+var char_scale =  global.portrait_offset[2];
+draw_sprite_ext(character_sprite, 0, char_x, char_y, char_scale, char_scale, 0, colour[0], 1);
 
-// === Dialogue Box ===
 var margin = 32;
 var box_w = room_width - 64;
 var box_h = 220;
@@ -23,13 +20,11 @@ draw_rectangle(box_x, box_y, box_x + box_w, box_y + box_h, false);
 draw_set_alpha(1);
 draw_set_color(c_white);
 
-// === Typewriter Text ===
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 var shown_text = string_copy(typewriter_text, 1, typewriter_index);
 draw_text_ext(box_x + 24, box_y + 24, shown_text, -1, box_w - 48);
 
-// === Choices (only when finished typing) ===
 if (!is_typing && current_page == array_length(pages) - 1) {
     var choice_x = room_width / 2;
     var choice_start_y = room_height / 2 - 140;
@@ -83,7 +78,7 @@ if (!is_typing && current_page == array_length(pages) - 1) {
         y_cursor += box_height + vertical_spacing;
     }
 
-    // === Leave Button ===
+    //Leave button
     var count = array_length(node.choices);
     var is_leave_selected = (selected_choice == count);
 

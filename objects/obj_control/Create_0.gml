@@ -1,21 +1,15 @@
-// === Parse dialogue.txt into a node map ===
 dialogue_nodes = ds_map_create();
 
-// Create global dialogue_progress if it doesn't exist
 if (!variable_global_exists("dialogue_progress")) {
     global.dialogue_progress = ds_map_create();
 }
 
-// ===== ADD THIS to avoid crash =====
 if (!variable_global_exists("dialogue_file")) {
     global.dialogue_file = "dialogue_priest.txt"; // fallback if not set
 }
 if (!variable_global_exists("character_sprite")) {
     global.character_sprite = spr_preacher_anime;
 }
-// ===== END ADD =====
-
-// Load file based on global.dialogue_file
 var file = file_text_open_read(global.dialogue_file);
 var current_id = "";
 var node_text = "";
@@ -61,14 +55,12 @@ if (current_id != "") {
 }
 file_text_close(file);
 
-// === Load Progress ===
 if (ds_map_exists(global.dialogue_progress, global.dialogue_file)) {
     current_node = global.dialogue_progress[? global.dialogue_file];
 } else {
     current_node = "start";
 }
 
-// === Other Setup ===
 selected_choice = 0;
 current_page = 0;
 pages = [];

@@ -43,6 +43,7 @@ with (obj) {
     if (point_distance(other.x, other.y, x, y) < interact_range) {
 
         if (keyboard_check_pressed(vk_space) && variable_instance_exists(id, "scene_to_load")) {
+			audio_play_sound(snd_boop, 1, false); 
             
             global.return_x = obj_player.x;
             global.return_y = obj_player.y;

@@ -19,7 +19,7 @@ CHOICE: Pack your bag and set off immediately|ooze_camp
 #ID: ooze_defense
 TEXT: Being naturally cautious, you decide to stay alert and stand still, your eyes fixed in vigilance, and your body tensed like a drawn bow—ready for any potential danger. Ooze perceptively senses your guarded stance and slightly raises its body, using a peculiar gesture to indicate it means you no harm. Its form becomes even more translucent, and the internal glow ceases its flicker, settling into a steady, soft radiance—as if earnestly trying to prove its harmlessness. Disgusted by this, you abruptly step back several paces, your face filled with terror and accompanied by an involuntary cry. Startled by your reaction, Ooze instantly shrinks into a compact ball; its glow dims, and in a blink it hides in the shadows, leaving only a vague outline behind—as if fearing further harm.
 You end up losing an important companion.
-CHOICE: Restart Game|start
+CHOICE: Leave|leave
 
 #ID: ooze_camp
 TEXT: Chapter 2: Life at the Camp
@@ -31,16 +31,16 @@ CHOICE: Suggest sending someone else while you stay back at the camp|ooze_retrea
 
 #ID: ooze_explore
 TEXT: A firm resolve kindles within you, and you propose to Ooze that you both explore the abandoned factory, believing that you might find something useful for the camp. Though Ooze feels some fear, encouraged by your determination, it wraps one of its tentacles around your arm to signal its willingness to accompany you.
-CHOICE: Summon your courage and prepare to set off|ooze_resonance
+CHOICE: Summon your courage and prepare to set off|chapter3_intro
 CHOICE: Hesitate repeatedly and focus on building up your strength first|ooze_prepare
 
 #ID: ooze_prepare
 TEXT: Gazing at Ooze, you ponder and say, “Ooze, the mutated factory district is far too dangerous. Let’s first focus on strengthening ourselves around the camp before venturing out, how about that?” Ooze sways its body and its glow twinkles in apparent agreement.
-CHOICE: With resolve, set off|ooze_resonance
+CHOICE: With resolve, set off|chapter3_intro
 
 #ID: ooze_retreat
 TEXT: The thought of the terrifying mutated creatures and unknown dangers lurking in the abandoned factory sends shivers down your spine. You sigh and, with a heavy heart, say, “No, let’s not risk it; it seems too dangerous for us to venture in.” Ooze watches you, its glow flickering a few times—a clear sign of its disappointment. Yet, it does not get angry; instead, it leans softly against you, as if to comfort you while accepting your decision.
-CHOICE: Restart Game|start
+CHOICE: ...|ooze_camp
 
 #ID:chapter3_intro
 TEXT:Chapter 3: Resonance in the Mutated Factory District
@@ -69,7 +69,7 @@ TEXT:When you squat down to scan the seepage, you notice that, due to long negle
 In the final moments, Ooze bursts forth from the bottom of the acidic waste pool. Its body has swollen into a deformed sphere, its surface now covered with proliferative tissue reminiscent of anti-cancer cells. Amid the fiery explosion of the elevator shaft, Ooze pushes you toward the ventilation duct, even as falling steel frames pierce its core. On the verge of death, it utters, in a distant and slow voice, “Never…again…”
 CHOICE:Restart|Restart Game
 
-#ID: ooze_depart
+#ID: set_off
 TEXT: Chapter 4: The Reflection of the Mirrored High Tower
 The mirrored high tower—its exterior wall constructed of nanomaterials—is now riddled with dense, spiderweb-like cracks. Each shattered fragment resembles a bizarre prism refracting cobalt-blue radiation; the light warps strangely, as if originating from another chaotic dimension.
 CHOICE: After a brief hesitation, reach out to touch the suspended remnants|ooze_contact4
@@ -78,17 +78,18 @@ CHOICE: Use a weapon to destroy the fluorescent moss inscriptions|ooze_gamble
 CHOICE: Shake off the moss to see the letters clearly|ooze_gamble
 
 #ID: ooze_contact4
-TEXT: The moment your fingertip touches the strange remnant, Ooze’s gelatinous body—like a bolt of black lightning—swiftly pierces through the mirrored exterior wall, enveloping you completely in a cocoon. Inside the cocoon, experimental records begin to appear, revealing past tests involving Ooze’s mucus. After a mysterious quantum fission event and a dramatic sequence of transformations, Ooze crystallizes and then departs, seemingly forgetting who you are. When you find it again, it no longer responds t...
-CHOICE: Restart Game|start
+TEXT: The moment your fingertip touches the strange remnant, Ooze’s gelatinous body—like a bolt of black lightning—swiftly pierces through the mirrored exterior wall, enveloping you completely in a cocoon. On the surface of the cocoon, experimental records once detailing its gelatinous samples begin to appear. It turns out that a secret laboratory once attempted to use Ooze’s radioactive mucus to create an anti-radiation serum, but all test subjects underwent a horrific quantum fission on the seventh day. Inside the cocoon, the readings on your radiation detector drop sharply. Meanwhile, fluorescent patterns resembling human bones emerge on Ooze’s surface, emanating a mysterious glow. With a crisp “crack,” the cocoon shatters, and Ooze’s remnant briefly condenses into a humanoid silhouette resembling you; then, its body begins to petrify, eventually transforming into a navigational statue at the trading post. When the building vibrates, pieces of Ooze’s petrified layer peel away to reveal flowing radioactive gelatin within. After the seventh vibration, Ooze suddenly bursts forth and departs from the area.
+Hurriedly, you return to camp in search of Ooze. After several days, you finally find it. But when you call out, Ooze’s gaze is vacant and unresponsive—it no longer acknowledges you. Whatever you say, it remains unresponsive; the once intimate companion now seems like a stranger. Perhaps those violent vibrations mercilessly erased its memory, and the Ooze that once faced death with you amid the wasteland no longer recognizes you. In this desolate land, bereft of Ooze’s familiar response, you feel an overwhelming sense of loss, uncertain how to proceed on your adventurous path alone.
+CHOICE: Leave|leave
 
 #ID: ooze_gamble
 TEXT: You clench your crowbar tightly and forcefully clear away the slimy moss clinging to the base of the tower. The tower shakes violently; strange energy surges form a vortex, and your shadow gains a will of its own. Parallel dimensions flash before your eyes, showing strange timelines with distorted versions of yourself and Ooze. Suddenly, Ooze rescues you, and you both escape from the tower’s collapse.
-CHOICE: Head right along a faint path|ooze_unknown
+CHOICE: Head right along a faint path|ooze_depart_final
 CHOICE: Proceed straight into an open area|ooze_unknown
 
 #ID: ooze_unknown
 TEXT: Breaking free from the urgent tug of Ooze’s grasping tendrils, you turn and dash toward that barely visible path. The fog thickens on both sides and carries a corrosive effect; it becomes clear that this path is impassable.
-CHOICE: Restart Game|start
+CHOICE: ...|GameOver
 
 #ID: ooze_depart_final
 TEXT: Chapter 5: The Last Radiation Barrier
@@ -109,13 +110,13 @@ CHOICE: Amidst overwhelming peril, head into the unknown territory|ooze_gulch
 
 #ID: ooze_retreat_final
 TEXT: Gritting your teeth, you retreat to scavenge supplies but find only decay. Then Ooze uncovers a military crate with anti-radiation serum—two usable. You inject them, but your body reacts violently while Ooze absorbs the rest. Crystallized, it shields you one last time, becoming a cracked stone statue—a silent protector in the wasteland.
-CHOICE: Restart Game|start
+CHOICE: ...|GameOver
 
 #ID: ooze_gulch
 TEXT: You descend into the acidic mist of the Radiation Gulch, where danger and hope blur. The bond you share with Ooze is the only constant in a world that defies understanding.
-CHOICE: Restart Game|start
+CHOICE: ...|GameOver
 
-#ID: ooze_gulch_final
+#ID: ooze_gulch
 TEXT:Chapter 6: The Adventure in the Radiation Gulch
 Though you know the dangers are immense, you have no choice but to retreat into the Radiation Gulch with Ooze as the monsters relentlessly close in from behind. You begin to clamber down along the rocky crevices, desperate to find even a sliver of hope in this treacherous place.
 At this moment, Ooze’s crystalline body vibrates violently at a bizarre, inexplicable frequency. The valley’s churning, steaming acidic mist intermingles with blue, ghostly moss; each breath feels as though you are swallowing razor-sharp radioactive blades. The filter of your protective mask is long clogged by Ooze’s secreted mucus and emits a strained, piercing wail on the verge of collapse. Embedded in the valley walls are countless bones, severely corroded by acid. Faint green light seeps from the cracks in their skulls, like innumerable eyes hidden in the darkness, coldly watching you.
@@ -131,10 +132,14 @@ TEXT: The instant you plunge into the passage, Ooze’s body instantaneously har
 Occasionally, the passage walls spew scorching, corrosive steam. Instantly, Ooze stretches out its body to form a sturdy barrier, the steam leaving only fleeting scorch marks upon impact. The ground trembles and collapses intermittently, revealing bottomless voids, as Ooze’s tendrils grasp your body to pull you away from danger. Throughout this arduous journey, you deeply feel Ooze’s protection—and your trust in it grows ever stronger.
 Time passes in a blur, and finally you emerge from the passage, successfully escaping the peril. When you return to camp, your companions are overjoyed at your survival. In this life-and-death trial, your bond with Ooze has been irrevocably strengthened. It is no longer just a mysterious creature but an indispensable partner in this perilous world; together you face the unknown challenges that lie ahead.
 
-CHOICE: Restart Game|start
+CHOICE: ...|EndGame
 
 #ID: ooze_despair
 TEXT: Ooze’s tendrils grip you tightly, their immense strength sending searing pain through your ankle. Yet deep within, a resolute determination surges—uncertain where this bizarre glowing passage might lead, you fear that stepping in rashly could plunge you into an even deeper abyss. You cling desperately to the rocky crevice with both hands, trying to break free from Ooze’s control. Your nails scrape against the rough stone with an ear-piercing sound, and blood wells from your fingertips, vanishing instantly into the churning acidic mist below.
 While struggling with every ounce of strength, you scan your surroundings for any possible escape. Your eyes fix on the acid pool below. Seizing the opportunity, you grab a rusty pipe beside you and smash it violently into the acid. The clamor of metal colliding rings out, triggering a violent tremor. In response, Ooze’s body suddenly swells into a gigantic sphere, forcefully hurling you away from this deathly area. At the very moment the acid pool explodes, countless shards of metal encrusted in fluorescent mucus scatter like hidden projectiles. Ooze, still clutching you, tosses you into the glowing passage. But amid the chaos, you sense that Ooze has detected your distrust. Whereas it once eagerly assisted you, it now becomes sluggish and detached—it no longer draws near or shields you as before. You realize that your actions have wounded the bond between you and Ooze. Exhausted, you watch helplessly as Ooze gradually distances itself. In the days that follow, every attempt you make to repair the relationship proves futile; the once intimate partnership has developed an insurmountable rift, and in this hostile world, you have lost a powerful ally—rendering your future journey all the more arduous and lonely.
 
-CHOICE: Restart Game|start
+CHOICE: Leave|leave
+
+#ID: leave
+TEXT: ...
+CHOICE: Leave|leave

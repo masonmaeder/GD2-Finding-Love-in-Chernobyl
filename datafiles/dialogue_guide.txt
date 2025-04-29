@@ -1,0 +1,32 @@
+#ID: start
+TEXT: Hello, you're awake, they call me The Guide.
+CHOICE: Um.... hello|welcome
+
+#ID: welcome
+TEXT: She silently gazes at you, noticing your furrowed brow and closed eyes, as if you were desperately searching deep into your memory. 
+She lets out a slight sigh and begins to speak:
+"This is Chernobyl... or what's left of it. Years ago, a nuclear reactor exploded here, devastating everything. Now, only ruins and radiation remain. We survivors cling to what little life we have left here at the camp. But truthfully, the radiation sickness will eventually claim us all. There's no escaping it. So, you might as well find some warmth... maybe even..." 
+"...love before the end comes."
+CHOICE: What?|default
+
+#ID: default
+TEXT: She stares faintly and turns her gaze back toward the campfires, her silhouette flickering in the smoke and haze.
+"If you have any other questions, just ask me."
+CHOICE: What is this place?|what_is_this_place
+CHOICE: Why am I feeling sick?|why_am_i_sick
+CHOICE: How can I find love?|how_to_find_love
+
+#ID: what_is_this_place
+TEXT: "This place... was once a thriving city called Pripyat, near the Chernobyl Nuclear Power Plant. After the reactor exploded, the entire region was abandoned. Now, only the desperate or the forgotten remain here."
+CHOICE: Ask another question|default
+
+#ID: why_am_i_sick
+TEXT: "The air, the ground, the water—everything here is tainted with radiation. No one can live here without paying the price. The dizziness, the weakness you're feeling... it's the beginning stages of radiation poisoning."
+CHOICE: Ask another question|default
+
+#ID: how_to_find_love
+TEXT: "Even in a wasteland like this, people crave connection. Survival isn't just about food and shelter—it's about hope, about finding someone to share your final days with. But some can be picky, just speak from your heart, and you might find someone willing to share theirs."
+"You can engage in conversations with people, but watch what you say, there are no do-overs."
+"You could also stop talking to a person whenever, come back, and pick up where you left off." 
+CHOICE: Ask another question|default
+
