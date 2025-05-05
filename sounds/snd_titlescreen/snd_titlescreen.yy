@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_main",
+  "%Name":"snd_titlescreen",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":60.36898,
-  "name":"snd_main",
+  "duration":68.75429,
+  "name":"snd_titlescreen",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_main.mp3",
+  "soundFile":"snd_titlescreen.mp3",
   "type":0,
   "volume":1.0,
 }

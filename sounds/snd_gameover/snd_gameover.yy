@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_main",
+  "%Name":"snd_gameover",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":60.36898,
-  "name":"snd_main",
+  "duration":5.5902042,
+  "name":"snd_gameover",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_main.mp3",
+  "soundFile":"snd_gameover.mp3",
   "type":0,
-  "volume":1.0,
+  "volume":0.82,
 }

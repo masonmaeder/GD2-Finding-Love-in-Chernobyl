@@ -23,6 +23,20 @@ if (jumpedIn) {
 	xSpeed = (rightKey - leftKey) * moveSpeed;
 	ySpeed = (downKey - upKey) * moveSpeed;
 	
+	// Handle walking sound
+if (xSpeed != 0 || ySpeed != 0) {
+    // Player is moving
+    if (!audio_is_playing(snd_walking)) {
+        audio_play_sound(snd_walking, 1, true); // Loop the walking sound
+    }
+} else {
+    // Player is idle
+    if (audio_is_playing(snd_walking)) {
+        audio_stop_sound(snd_walking);
+    }
+}
+
+	
 	//show_debug_message(xSpeed);
 
 //var scene_objects = [obj_invis, obj_bin, obj_boulder, obj_dryad_pixel, obj_enemy, obj_fire, obj_guide_pixel, obj_hobo_pixel, obj_lake, obj_ooze_pixel, obj_preacher_pixel, obj_tent, obj_tree, obj_tree_2];
@@ -38,28 +52,26 @@ var scene_objects = [obj_preacher_pixel, obj_dryad_pixel];
 for (var i = 0; i < array_length(scene_objects); i++) {
 */
     
-var obj = obj_interactable;
-with (obj) {
-    if (point_distance(other.x, other.y, x, y) < interact_range) {
-
-        if (keyboard_check_pressed(vk_space) && variable_instance_exists(id, "scene_to_load")) {
-			audio_play_sound(snd_boop, 1, false); 
-            
-            global.return_x = obj_player.x;
-            global.return_y = obj_player.y;
-            global.return_room = rm_game;
-            
-            if (variable_instance_exists(id, "dialogue_file")) {
-                global.dialogue_file = dialogue_file;
-            }
-            if (variable_instance_exists(id, "character_sprite")) {
-                global.character_sprite = character_sprite;
-            }
-			if (variable_instance_exists(id, "portrait_offset")) {
-			    global.portrait_offset = portrait_offset;
-			}
-            room_goto(scene_to_load);
+if (keyboard_check_pressed(vk_space)) {
+    var target = instance_nearest(x, y, obj_interactable);
+    if (target != noone && distance_to_object(target) < interact_range) {
+        // Store data and go to scene
+        audio_play_sound(snd_boop, 1, false); 
+        global.return_x = x;
+        global.return_y = y;
+        global.return_room = room;
+        
+        if (variable_instance_exists(target.id, "dialogue_file")) {
+            global.dialogue_file = target.dialogue_file;
         }
+        if (variable_instance_exists(target.id, "character_sprite")) {
+            global.character_sprite = target.character_sprite;
+        }
+        if (variable_instance_exists(target.id, "portrait_offset")) {
+            global.portrait_offset = target.portrait_offset;
+        }
+        
+        room_goto(target.scene_to_load);
     }
 }
 

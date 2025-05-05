@@ -133,7 +133,7 @@ CHOICE: Go towards the smoke.|smoke_stacks_area
 CHOICE: Go towards the trees.|trees_forest_area 
 
 #ID: smoke_stacks_area
-You both trek towards the smoke, only to discover some smoke stacks. This was likely one of the exit points where the blast escaped from. The smoke stacks seem to be in-tact however. During your arduous journey, you discover a pitiful vagrant. Its clothes are torn and its skin has become leather-like. It lies weakly curled up in a corner, eyes filled terror and tears.
+TEXT: You both trek towards the smoke, only to discover some smoke stacks. This was likely one of the exit points where the blast escaped from. The smoke stacks seem to be in-tact however. During your arduous journey, you discover a pitiful vagrant. Its clothes are torn and its skin has become leather-like. It lies weakly curled up in a corner, eyes filled terror and tears.
 CHOICE: Help the vagrant, lift them up and offer food and water|rad_zone_kind
 CHOICE: Search nearby for medical supplies and then return to assist the vagrant|rad_zone_kind
 CHOICE: Survey the surroundings and choose to avoid them, continuing onward|rad_zone_cautious
